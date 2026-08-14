@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тема 4: Время Конца — Периоды 1260, 1290 и 1335 Лет | Пророческий Путь: Даниил и Откровение</title>
+  <meta name="description" content="Экзегетический разбор 11 и 12 глав книги Даниила: цари Севера и Юга, 508 г. (Хлодвиг), 1798 г. (рана), 1843/1844 гг., восстание Михаила и воскресение.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FAF7F2;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-glass: rgba(255, 255, 255, 0.92);
+      --bg-parchment: #F4EFE6;
+      --bg-subtle: #F0EBE1;
+      --border-color: rgba(217, 119, 6, 0.15);
+      --border-stone: #E6E0D4;
+      --border-accent: rgba(217, 119, 6, 0.45);
+      --text-main: #1E293B;
+      --text-muted: #475569;
+      --text-dim: #94A3B8;
+      --accent-gold: #D97706;
+      --accent-gold-light: #F59E0B;
+      --accent-gold-dark: #B45309;
+      --accent-gold-glow: rgba(217, 119, 6, 0.12);
+      --accent-gold-subtle: rgba(217, 119, 6, 0.06);
+      --accent-navy: #0F172A;
+      --accent-blue: #2563EB;
+      --accent-purple: #7C3AED;
+      --accent-emerald: #059669;
+      --accent-crimson: #DC2626;
+      --accent-cyan: #0891B2;
+      --font-title: 'Cinzel', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Lora', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --shadow-sm: 0 2px 6px rgba(180, 83, 9, 0.04), 0 1px 3px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 6px 18px rgba(180, 83, 9, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 14px 32px -6px rgba(180, 83, 9, 0.14);
+      --shadow-gold: 0 0 25px rgba(217, 119, 6, 0.2);
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    [data-theme="dark"] {
+      --bg-primary: #0A0E17;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.88);
+      --bg-glass: rgba(15, 23, 42, 0.85);
+      --bg-parchment: rgba(245, 158, 11, 0.04);
+      --bg-subtle: #1E293B;
+      --border-color: rgba(255, 255, 255, 0.09);
+      --border-stone: rgba(255, 255, 255, 0.12);
+      --border-accent: rgba(245, 158, 11, 0.38);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --accent-gold: #F59E0B;
+      --accent-gold-light: #FBBF24;
+      --accent-gold-dark: #D97706;
+      --accent-gold-glow: rgba(245, 158, 11, 0.18);
+      --accent-gold-subtle: rgba(245, 158, 11, 0.08);
+      --accent-navy: #0B0F19;
+      --accent-blue: #3B82F6;
+      --accent-purple: #8B5CF6;
+      --accent-emerald: #10B981;
+      --accent-crimson: #EF4444;
+      --accent-cyan: #06B6D4;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 14px 32px -6px rgba(0, 0, 0, 0.6);
+      --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.25);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.68;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(217, 119, 6, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(37, 99, 235, 0.03) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    h1, h2, h3, h4, .brand-logo { font-family: var(--font-title); letter-spacing: 0.02em; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Navbar */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-stone);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .brand-group { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-main); }
+    .brand-symbol {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      color: #FFFFFF; font-weight: 800; font-size: 1.3rem; font-family: var(--font-title);
+      box-shadow: var(--shadow-gold);
+    }
+    .brand-title { font-size: 1.22rem; font-weight: 800; color: var(--text-main); line-height: 1.15; }
+    .brand-subtitle { font-size: 0.68rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.16em; font-family: var(--font-body); font-weight: 700; }
+    .nav-links { display: flex; align-items: center; gap: 1.1rem; list-style: none; }
+    .nav-link {
+      color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 600;
+      transition: var(--transition); padding: 6px 11px; border-radius: 8px;
+    }
+    .nav-link:hover, .nav-link.active { color: var(--accent-gold-dark); background: var(--accent-gold-glow); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .btn-icon {
+      background: var(--bg-card); border: 1px solid var(--border-stone); color: var(--text-main);
+      width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center;
+      justify-content: center; cursor: pointer; transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-icon:hover { border-color: var(--accent-gold); color: var(--accent-gold); transform: translateY(-2px); }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      padding: 1.5rem 0 0.5rem; font-size: 0.88rem; color: var(--text-muted);
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .breadcrumbs a { color: var(--accent-gold-dark); text-decoration: none; font-weight: 600; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    .breadcrumbs span { color: var(--text-dim); }
+
+    /* Theme Hero Banner */
+    .theme-hero {
+      background: var(--bg-card); border: 1px solid var(--border-stone);
+      border-radius: 20px; padding: 3rem 2.5rem; margin: 1.5rem 0 3rem;
+      box-shadow: var(--shadow-md);
+    }
+    .badge-gold { background: var(--accent-gold-glow); color: var(--accent-gold-dark); border: 1px solid var(--border-accent); display: inline-block; padding: 4px 12px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+    .theme-hero-title { font-size: 2.3rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.5rem; }
+    .theme-hero-chapters { font-size: 1.05rem; color: var(--accent-gold-dark); font-weight: 700; margin-bottom: 1.25rem; }
+    .theme-hero-summary { font-size: 1.15rem; color: var(--text-muted); font-family: var(--font-serif); line-height: 1.75; }
+
+    /* Content Layout */
+    .theme-layout {
+      display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 2.5rem; align-items: start;
+    }
+    @media (max-width: 992px) { .theme-layout { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border-stone);
+      border-radius: 18px; padding: 2rem; box-shadow: var(--shadow-sm); margin-bottom: 2rem;
+    }
+    .card-title { font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 1.25rem; }
+    
+    .scripture-card {
+      background: var(--bg-parchment); border-left: 4px solid var(--accent-gold);
+      padding: 1.25rem 1.6rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0;
+      font-family: var(--font-serif); font-size: 1.05rem; font-style: italic; color: var(--text-main);
+      border-top: 1px solid var(--border-stone); border-right: 1px solid var(--border-stone); border-bottom: 1px solid var(--border-stone);
+    }
+    
+    .exegesis-block { margin-top: 1.75rem; }
+    .exegesis-block h4 { font-size: 1.15rem; color: var(--accent-gold-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; font-weight: 700; }
+    .exegesis-block p, .exegesis-block ul, .exegesis-block ol { color: var(--text-muted); font-size: 0.98rem; line-height: 1.72; margin-bottom: 1.2rem; }
+    .exegesis-block ul, .exegesis-block ol { padding-left: 1.25rem; }
+    .exegesis-block li { margin-bottom: 0.4rem; }
+
+    .sidebar-box {
+      background: var(--bg-subtle); border: 1px solid var(--border-stone);
+      border-radius: 16px; padding: 1.6rem; margin-bottom: 1.5rem;
+    }
+    .sidebar-box h5 { font-size: 0.95rem; color: var(--accent-gold-dark); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.9rem; font-weight: 800; }
+    .sidebar-list { list-style: none; font-size: 0.92rem; color: var(--text-muted); line-height: 1.65; }
+    .sidebar-list li { margin-bottom: 0.65rem; display: flex; align-items: flex-start; gap: 8px; }
+    .sidebar-list li span.bullet { color: var(--accent-gold); font-weight: bold; }
+
+    .table-responsive { overflow-x: auto; border-radius: 14px; border: 1px solid var(--border-stone); background: var(--bg-card); box-shadow: var(--shadow-sm); margin: 1.5rem 0; }
+    .theme-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem; }
+    .theme-table th, .theme-table td { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-stone); vertical-align: top; }
+    .theme-table th { background: var(--bg-subtle); color: var(--accent-gold-dark); font-family: var(--font-title); font-weight: 700; }
+    .theme-table tr:hover td { background: var(--accent-gold-subtle); }
+
+    /* Quiz Widget */
+    .quiz-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1.5rem; }
+    .quiz-option {
+      background: var(--bg-card); border: 1px solid var(--border-stone); color: var(--text-main);
+      padding: 14px 18px; border-radius: 12px; cursor: pointer; font-size: 0.95rem; text-align: left;
+      transition: var(--transition); display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow-sm);
+    }
+    .quiz-option:hover { border-color: var(--accent-gold); background: var(--accent-gold-subtle); }
+    .quiz-option.correct { background: rgba(5, 150, 105, 0.12); border-color: var(--accent-emerald); color: var(--text-main); font-weight: 600; }
+    .quiz-option.wrong { background: rgba(220, 38, 38, 0.12); border-color: var(--accent-crimson); color: var(--text-main); }
+    .quiz-feedback { padding: 1.1rem 1.4rem; border-radius: 12px; font-size: 0.92rem; margin-bottom: 1.25rem; display: none; line-height: 1.6; }
+    .quiz-feedback.show { display: block; }
+
+    /* Buttons */
+    .btn {
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      color: #FFFFFF; border: none; padding: 11px 24px; border-radius: 10px;
+      font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: var(--transition);
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      box-shadow: var(--shadow-gold);
+    }
+    .btn:hover { background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold)); transform: translateY(-2px); }
+    .btn-secondary { background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-stone); box-shadow: var(--shadow-sm); }
+    .btn-secondary:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+
+    /* Footer */
+    .footer { background: var(--accent-navy); border-top: 1px solid var(--border-stone); padding: 4rem 0 2rem; margin-top: 5rem; color: #94A3B8; font-size: 0.9rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 3rem; margin-bottom: 3rem; }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .footer-col h5 { font-family: var(--font-title); color: #F8FAFC; font-size: 1.05rem; margin-bottom: 1.2rem; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.65rem; }
+    .footer-links a { color: #94A3B8; text-decoration: none; transition: var(--transition); }
+    .footer-links a:hover { color: var(--accent-gold-light); }
+    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); color: #64748B; font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-symbol">Ω</div>
+        <div>
+          <div class="brand-title">ПРОРОЧЕСКИЙ ПУТЬ</div>
+          <div class="brand-subtitle">Даниил &amp; Откровение</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#tracks" class="nav-link">Все Темы</a></li>
+        <li><a href="index.html#lessons" class="nav-link">Уроки (1–12)</a></li>
+        <li><a href="index.html#timeline" class="nav-link">Таймлайн</a></li>
+        <li><a href="index.html#matrix" class="nav-link">Матрица</a></li>
+        <li><a href="index.html#revelation" class="nav-link">Откровение</a></li>
+        <li><a href="index.html#form-test" class="nav-link">Экзамен</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-icon" id="themeToggle" title="Сменить тему" aria-label="Тема">
+          <svg id="themeIcon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        </button>
+        <a href="index.html" class="btn btn-secondary" style="padding:8px 14px; font-size:0.85rem;">&larr; На главную</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <span>/</span>
+      <a href="index.html#tracks">Основные Темы Изучения</a>
+      <span>/</span>
+      <span>Тема 4: Время Конца — Периоды 1260, 1290 и 1335 Лет</span>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="theme-hero">
+      <span class="badge-gold">Тема 4 • Эсхатологическая Хронология</span>
+      <h1 class="theme-hero-title">Время Конца: 1260, 1290 и 1335 Дней-Лет</h1>
+      <div class="theme-hero-chapters">Книга Даниила • Главы 11 и 12</div>
+      <p class="theme-hero-summary">
+        Кульминация пророческой хронологии книги Даниила. Детальная панорама борьбы царей Севера и Юга (Дан 11), восстание Михаила, закрытие благодати и математическая гармония трех периодов: 1260, 1290 и 1335 дней (Дан 12).
+      </p>
+    </div>
+
+    <div class="theme-layout">
+      <div>
+        <div class="card">
+          <h2 class="card-title">1. Панорама Царей Севера и Юга (Дан 11)</h2>
+          <div class="scripture-card">
+            «И восстанет в то время Михаил, князь великий, стоящий за сынов народа твоего; и наступит время тяжкое, какого не бывало с тех пор, как существуют люди, до сего времени; но спасутся в это время из народа твоего все, которые найдены будут записанными в книге» (Дан 12:1).
+          </div>
+          <div class="exegesis-block">
+            <h4><span style="color:var(--accent-gold-dark);">✦</span> От Персии до Римской империи</h4>
+            <p>
+              Дан 11 начинается с 4 персидских царей, предсказывает восстание могущественного царя Греции (Александра) и раздел его царства по 4 ветрам небесным (ст. 1–4). Далее следует детальная летопись борьбы Селевкидов (Север) и Птолемеев (Юг), выход на арену Рима и сокрушение «Вождя завета» (Иисуса Христа на Голгофе, ст. 22).
+            </p>
+            <h4><span style="color:var(--accent-gold-dark);">✦</span> Своенравный царь</h4>
+            <p>
+              В средневековую эпоху власть Севера олицетворяет религиозно-политическая система, превозносящаяся выше всякого божества (ст. 36–39). В эсхатологическом финале столкновение сил завершается приходом царя к своему концу, «и никто не поможет ему» (ст. 45).
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">2. Три Пророческих Периода Главы 12: 1260, 1290 и 1335 Лет</h2>
+          <div class="exegesis-block">
+            <h4><span style="color:var(--accent-gold-dark);">✦</span> 1260 Лет (Дан 12:7; 7:25)</h4>
+            <p>
+              «Время, времена и полувремя» = 1260 пророческих дней-лет (538 г. – 1798 г. н.э.). От изгнания остготов из Рима до пленения папы Пия VI французским генералом Бертье.
+            </p>
+            <h4><span style="color:var(--accent-gold-dark);">✦</span> 1290 Лет (Дан 12:11): 508 – 1798 гг.</h4>
+            <p>
+              «И со времени прекращения ежедневной жертвы (тамид) и поставления мерзости запустения пройдет 1290 дней». Точка отсчета — 508 г. н.э., когда победа франкского короля Хлодвига над арианскими вестготами устранила языческо-арианский барьер для светского возвышения папства. $508 + 1290 = 1798$ г. н.э. (лишение папства светской власти).
+            </p>
+            <h4><span style="color:var(--accent-gold-dark);">✦</span> 1335 Лет (Дан 12:12): 508 – 1843/1844 гг.</h4>
+            <p>
+              «Блажен, кто ожидает и достигнет 1335 дней». $508 + 1335 = 1843/1844$ г. н.э. Этот период завершился великим адвентским пробуждением, распечатыванием книги Даниила и началом Антитипического Дня Искупления (очищения Святилища в 2300 дней).
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">3. Воскресение Праведных и Жребий Даниила</h2>
+          <div class="scripture-card">
+            «А ты иди к твоему концу и упокоишься, и восстанешь для получения твоего жребия в конце дней» (Дан 12:13).
+          </div>
+          <div class="exegesis-block">
+            <p>
+              Последнее слово книги — *lĕqēṣ hayyāmîn* (לְקֵץ הַיָּמִין) соединяет древнееврейский корень с арамейским окончанием, объединяя двуязычный текст книги и провозглашая верховную надежду: пророк Даниил и все святые пробудятся в первом воскресении для вечной жизни.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">4. Проверка Знаний по Теме</h2>
+          <div style="font-size:1.1rem; font-weight:700; color:var(--text-main); margin-bottom:1.25rem;">
+            Какое историческое событие в 508 г. н.э. положило начало отсчету 1290 и 1335 дней?
+          </div>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="checkThemeQuiz(0, 1, 'В 508 г. н.э. победа Хлодвига над арианскими вестготами устранила препятствие для папства и начала отсчет 1290 и 1335 дней.')">
+              <span style="font-weight:700; color:var(--accent-gold-dark);">A.</span> Падение Константинополя
+            </button>
+            <button class="quiz-option" onclick="checkThemeQuiz(1, 1, 'В 508 г. н.э. победа Хлодвига над арианскими вестготами устранила препятствие для папства и начала отсчет 1290 и 1335 дней.')">
+              <span style="font-weight:700; color:var(--accent-gold-dark);">B.</span> Победа короля франков Хлодвига над вестготами и союз с Римом (устранение арианского барьера)
+            </button>
+            <button class="quiz-option" onclick="checkThemeQuiz(2, 1, 'В 508 г. н.э. победа Хлодвига над арианскими вестготами устранила препятствие для папства и начала отсчет 1290 и 1335 дней.')">
+              <span style="font-weight:700; color:var(--accent-gold-dark);">C.</span> Написание Корана
+            </button>
+          </div>
+          <div id="themeQuizFeedback" class="quiz-feedback"></div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <div class="sidebar-box" style="border-color:var(--border-accent);">
+          <h5>Связанные Уроки Курса</h5>
+          <a href="index.html#lessons" class="btn" style="width:100%; justify-content:center; margin-bottom:8px;">Урок 11: Цари Севера и Юга &rarr;</a>
+          <a href="index.html#lessons" class="btn btn-secondary" style="width:100%; justify-content:center; margin-bottom:8px;">Урок 12: 1290 и 1335 Дней &rarr;</a>
+          <a href="index.html#timeline" class="btn btn-secondary" style="width:100%; justify-content:center;">Открыть Таймлайн &rarr;</a>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Синхронизация Дат</h5>
+          <ul class="sidebar-list">
+            <li><span class="bullet">◈</span> <strong>508 г. н.э.:</strong> Старт 1290 и 1335 лет.</li>
+            <li><span class="bullet">◈</span> <strong>538 г. н.э.:</strong> Старт 1260 лет.</li>
+            <li><span class="bullet">◈</span> <strong>1798 г. н.э.:</strong> Конец 1260 и 1290 лет.</li>
+            <li><span class="bullet">◈</span> <strong>1843/1844 гг.:</strong> Конец 1335 и 2300 лет.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-group" style="margin-bottom: 1rem;">
+            <div class="brand-symbol">Ω</div>
+            <div>
+              <div class="brand-title" style="color:#FFF;">ПРОРОЧЕСКИЙ ПУТЬ</div>
+              <div class="brand-subtitle" style="color:var(--accent-gold-light);">Даниил &amp; Откровение</div>
+            </div>
+          </div>
+          <p style="color:#94A3B8; font-size:0.88rem; line-height: 1.65;">
+            Современная цифровая платформа для академического, экзегетического и духовно-назидательного изучения апокалиптических книг Священного Писания.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Темы Изучения</h5>
+          <ul class="footer-links">
+            <li><a href="theme1-four-kingdoms.html">1. Четыре Царства и Суд (Дан 2, 7)</a></li>
+            <li><a href="theme2-2300-days-sanctuary.html">2. 2300 Дней и Святилище (Дан 8–9)</a></li>
+            <li><a href="theme3-faith-worship-trials.html">3. Испытания Веры (Дан 1, 3, 6)</a></li>
+            <li><a href="theme4-time-of-the-end-1290-1335.html">4. Время Конца (Дан 11–12)</a></li>
+            <li><a href="theme5-seven-churches-seals-trumpets.html">5. 7 Церквей, Печатей и Труб (Откр 1–11)</a></li>
+            <li><a href="theme6-great-controversy-new-jerusalem.html">6. Великая Борьба и Вечность (Откр 12–22)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Уроки и Инструменты</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#lessons">Пошаговые Уроки (1–12)</a></li>
+            <li><a href="index.html#timeline">Пророческий Таймлайн</a></li>
+            <li><a href="index.html#matrix">Сравнительная Матрица</a></li>
+            <li><a href="index.html#form-test">Экзамен (Google Forms)</a></li>
+            <li><a href="index.html#library">Академическая Библиотека</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная страница портала</a></li>
+            <li><a href="index.html#revelation">Книга Откровение</a></li>
+            <li><a href="index.html#linguistics">Лингвистический Кабинет</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Академический портал библейской апокалиптики. «Блажен читающий и слушающие слова пророчества сего» (Откр 1:3).
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    themeToggle.onclick = () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    };
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        themeIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
+      } else {
+        themeIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>';
+      }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcon(savedTheme);
+    });
+
+    function checkThemeQuiz(selectedIdx, correctIdx, explanation) {
+      const feedback = document.getElementById('themeQuizFeedback');
+      feedback.style.display = 'block';
+      const options = document.querySelectorAll('.quiz-option');
+      options.forEach(b => b.disabled = true);
+      if (selectedIdx === correctIdx) {
+        options[selectedIdx].classList.add('correct');
+        feedback.className = 'quiz-feedback show';
+        feedback.style.background = 'rgba(5, 150, 105, 0.12)';
+        feedback.style.border = '1px solid var(--accent-emerald)';
+        feedback.style.color = 'var(--text-main)';
+        feedback.innerHTML = `<strong>Верно!</strong> ${explanation}`;
+      } else {
+        options[selectedIdx].classList.add('wrong');
+        options[correctIdx].classList.add('correct');
+        feedback.className = 'quiz-feedback show';
+        feedback.style.background = 'rgba(220, 38, 38, 0.12)';
+        feedback.style.border = '1px solid var(--accent-crimson)';
+        feedback.style.color = 'var(--text-main)';
+        feedback.innerHTML = `<strong>Неверно.</strong> ${explanation}`;
+      }
+    }
+  </script>
+</body>
+</html>
