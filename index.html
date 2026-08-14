@@ -1,75 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пророческий Путь: Даниил и Откровение | Интерактивная платформа изучения</title>
-  <meta name="description" content="Интерактивная образовательная и исследовательская платформа по изучению пророчеств книг Даниила и Откровение. Пошаговый путь уроков, хронологические таймлайны, экзегетика и тестирование.">
+  <title>Пророческий Путь: Даниил и Откровение | Интерактивная платформа</title>
+  <meta name="description" content="Интерактивная образовательная и исследовательская платформа по изучению пророчеств книг Даниила и Откровение в стиле Daniel's Prophetic Path.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-primary: #0b0f19;
-      --bg-secondary: #111827;
-      --bg-card: rgba(17, 24, 39, 0.85);
-      --bg-card-hover: rgba(31, 41, 55, 0.95);
-      --bg-glass: rgba(15, 23, 42, 0.8);
-      --bg-parchment: rgba(245, 158, 11, 0.03);
-      --border-color: rgba(255, 255, 255, 0.1);
-      --border-accent: rgba(245, 158, 11, 0.4);
-      --text-main: #f9fafb;
-      --text-muted: #9ca3af;
-      --text-dim: #6b7280;
-      --accent-gold: #f59e0b;
-      --accent-gold-light: #fbbf24;
-      --accent-gold-dark: #b45309;
-      --accent-gold-glow: rgba(245, 158, 11, 0.2);
-      --accent-blue: #3b82f6;
-      --accent-blue-light: #60a5fa;
-      --accent-purple: #8b5cf6;
-      --accent-emerald: #10b981;
-      --accent-crimson: #ef4444;
-      --accent-cyan: #06b6d4;
-      --accent-orange: #f97316;
-      --font-title: 'Cinzel', serif;
+      --bg-primary: #FAF7F2;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-glass: rgba(255, 255, 255, 0.94);
+      --bg-parchment: #F4EFE6;
+      --bg-subtle: #F0EBE1;
+      --border-color: rgba(217, 119, 6, 0.16);
+      --border-stone: #E6E0D4;
+      --border-accent: rgba(217, 119, 6, 0.45);
+      --text-main: #1E293B;
+      --text-muted: #475569;
+      --text-dim: #94A3B8;
+      --accent-gold: #D97706;
+      --accent-gold-light: #F59E0B;
+      --accent-gold-dark: #B45309;
+      --accent-gold-glow: rgba(217, 119, 6, 0.12);
+      --accent-gold-subtle: rgba(217, 119, 6, 0.06);
+      --accent-navy: #0F172A;
+      --accent-blue: #2563EB;
+      --accent-purple: #7C3AED;
+      --accent-emerald: #059669;
+      --accent-crimson: #DC2626;
+      --accent-cyan: #0891B2;
+      --font-title: 'Cinzel', Georgia, serif;
       --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-serif: 'Lora', Georgia, serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.4);
-      --shadow-lg: 0 12px 28px -5px rgba(0, 0, 0, 0.6);
-      --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.25);
+      --shadow-sm: 0 2px 6px rgba(180, 83, 9, 0.04), 0 1px 3px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 6px 18px rgba(180, 83, 9, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 14px 32px -6px rgba(180, 83, 9, 0.14);
+      --shadow-gold: 0 0 25px rgba(217, 119, 6, 0.2);
       --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    [data-theme="light"] {
-      --bg-primary: #fbf9f5;
-      --bg-secondary: #ffffff;
-      --bg-card: rgba(255, 255, 255, 0.92);
-      --bg-card-hover: #ffffff;
-      --bg-glass: rgba(255, 255, 255, 0.88);
-      --bg-parchment: #fffdfa;
-      --border-color: rgba(0, 0, 0, 0.09);
-      --border-accent: rgba(217, 119, 6, 0.45);
-      --text-main: #111827;
-      --text-muted: #4b5563;
-      --text-dim: #9ca3af;
-      --accent-gold: #d97706;
-      --accent-gold-light: #b45309;
-      --accent-gold-dark: #92400e;
-      --accent-gold-glow: rgba(217, 119, 6, 0.15);
-      --accent-blue: #2563eb;
-      --accent-blue-light: #3b82f6;
-      --accent-purple: #7c3aed;
-      --accent-emerald: #059669;
-      --accent-crimson: #dc2626;
-      --accent-cyan: #0891b2;
-      --accent-orange: #ea580c;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.08);
-      --shadow-lg: 0 12px 28px -5px rgba(0, 0, 0, 0.12);
-      --shadow-gold: 0 0 25px rgba(217, 119, 6, 0.15);
+    [data-theme="dark"] {
+      --bg-primary: #0A0E17;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.9);
+      --bg-glass: rgba(15, 23, 42, 0.88);
+      --bg-parchment: rgba(245, 158, 11, 0.05);
+      --bg-subtle: #1E293B;
+      --border-color: rgba(255, 255, 255, 0.09);
+      --border-stone: rgba(255, 255, 255, 0.12);
+      --border-accent: rgba(245, 158, 11, 0.38);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --accent-gold: #F59E0B;
+      --accent-gold-light: #FBBF24;
+      --accent-gold-dark: #D97706;
+      --accent-gold-glow: rgba(245, 158, 11, 0.18);
+      --accent-gold-subtle: rgba(245, 158, 11, 0.08);
+      --accent-navy: #0B0F19;
+      --accent-blue: #3B82F6;
+      --accent-purple: #8B5CF6;
+      --accent-emerald: #10B981;
+      --accent-crimson: #EF4444;
+      --accent-cyan: #06B6D4;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 14px 32px -6px rgba(0, 0, 0, 0.6);
+      --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.25);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -78,21 +80,15 @@
       background-color: var(--bg-primary);
       color: var(--text-main);
       font-family: var(--font-body);
-      line-height: 1.65;
-      overflow-x: hidden;
+      line-height: 1.68;
       background-image: 
-        radial-gradient(circle at 12% 18%, rgba(245, 158, 11, 0.05) 0%, transparent 45%),
-        radial-gradient(circle at 88% 82%, rgba(59, 130, 246, 0.05) 0%, transparent 45%);
+        radial-gradient(circle at 10% 15%, rgba(217, 119, 6, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(37, 99, 235, 0.03) 0%, transparent 40%);
       background-attachment: fixed;
     }
 
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: var(--bg-primary); }
-    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
-
     h1, h2, h3, h4, .brand-logo { font-family: var(--font-title); letter-spacing: 0.02em; }
-    .container { max-width: 1360px; margin: 0 auto; padding: 0 1.5rem; }
+    .container { max-width: 1320px; margin: 0 auto; padding: 0 1.5rem; }
 
     /* Navbar */
     .navbar {
@@ -100,140 +96,184 @@
       background: var(--bg-glass);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-stone);
+      box-shadow: var(--shadow-sm);
       transition: var(--transition);
     }
     .nav-container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
     .brand-group { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-main); }
     .brand-symbol {
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--accent-gold), #7c3aed);
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
       border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      color: #fff; font-weight: bold; font-size: 1.25rem; box-shadow: var(--shadow-gold);
+      color: #FFFFFF; font-weight: 800; font-size: 1.3rem; font-family: var(--font-title);
+      box-shadow: var(--shadow-gold);
     }
-    .brand-title { font-size: 1.18rem; font-weight: 700; color: var(--text-main); line-height: 1.2; }
-    .brand-subtitle { font-size: 0.68rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.15em; font-family: var(--font-body); }
-    .nav-links { display: flex; align-items: center; gap: 1.15rem; list-style: none; }
+    .brand-title { font-size: 1.22rem; font-weight: 800; color: var(--text-main); line-height: 1.15; }
+    .brand-subtitle { font-size: 0.68rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.16em; font-family: var(--font-body); font-weight: 700; }
+    .nav-links { display: flex; align-items: center; gap: 1.1rem; list-style: none; }
     .nav-link {
-      color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500;
-      transition: var(--transition); padding: 6px 10px; border-radius: 6px;
+      color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 600;
+      transition: var(--transition); padding: 6px 11px; border-radius: 8px;
     }
-    .nav-link:hover, .nav-link.active { color: var(--accent-gold); background: var(--accent-gold-glow); }
+    .nav-link:hover, .nav-link.active { color: var(--accent-gold-dark); background: var(--accent-gold-glow); }
     .nav-actions { display: flex; align-items: center; gap: 10px; }
     .btn-icon {
-      background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-main);
-      width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center;
+      background: var(--bg-card); border: 1px solid var(--border-stone); color: var(--text-main);
+      width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center;
       justify-content: center; cursor: pointer; transition: var(--transition);
+      box-shadow: var(--shadow-sm);
     }
     .btn-icon:hover { border-color: var(--accent-gold); color: var(--accent-gold); transform: translateY(-2px); }
 
-    /* Hero Section (Atmospheric Lovable-style) */
+    /* Hero Section */
     .hero-section {
-      padding: 5rem 0 4rem;
-      text-align: center;
-      position: relative;
-      background: radial-gradient(circle at center, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
-      border-bottom: 1px solid var(--border-color);
+      padding: 5rem 0 4rem; text-align: center; position: relative;
+      background: 
+        linear-gradient(180deg, rgba(244, 239, 230, 0.6) 0%, rgba(250, 247, 242, 0.95) 100%),
+        radial-gradient(circle at center, rgba(217, 119, 6, 0.08) 0%, transparent 65%);
+      border-bottom: 1px solid var(--border-stone);
+    }
+    [data-theme="dark"] .hero-section {
+      background: 
+        linear-gradient(180deg, rgba(17, 24, 39, 0.7) 0%, rgba(10, 14, 23, 0.95) 100%),
+        radial-gradient(circle at center, rgba(245, 158, 11, 0.08) 0%, transparent 65%);
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: var(--accent-gold-glow); border: 1px solid var(--border-accent);
-      color: var(--accent-gold); padding: 6px 18px; border-radius: 999px;
-      font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
-      margin-bottom: 1.5rem;
+      background: var(--bg-card); border: 1px solid var(--border-accent);
+      color: var(--accent-gold-dark); padding: 7px 20px; border-radius: 999px;
+      font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
+      margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);
     }
     .hero-title {
       font-size: clamp(2.3rem, 5.5vw, 4rem); font-weight: 900; line-height: 1.15;
-      margin-bottom: 1.25rem;
-      background: linear-gradient(135deg, var(--text-main) 30%, var(--accent-gold) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 1.25rem; color: var(--text-main);
     }
     .hero-desc {
-      max-width: 860px; margin: 0 auto 2.5rem; font-size: 1.18rem; color: var(--text-muted);
-      font-family: var(--font-serif); line-height: 1.75;
+      max-width: 860px; margin: 0 auto 2.5rem; font-size: 1.2rem; color: var(--text-muted);
+      font-family: var(--font-serif); line-height: 1.8;
     }
     .hero-buttons {
-      display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 3.5rem;
+      display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
     }
     .btn-hero-primary {
-      background: linear-gradient(135deg, var(--accent-gold), #d97706);
-      color: #000; font-weight: 700; padding: 14px 28px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      color: #FFFFFF; font-weight: 700; padding: 14px 30px; border-radius: 12px;
       text-decoration: none; font-size: 1rem; box-shadow: var(--shadow-gold);
       transition: var(--transition); display: inline-flex; align-items: center; gap: 8px;
     }
-    .btn-hero-primary:hover { transform: translateY(-2px); background: linear-gradient(135deg, var(--accent-gold-light), #f59e0b); }
+    .btn-hero-primary:hover { transform: translateY(-2px); background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold)); }
     .btn-hero-secondary {
-      background: var(--bg-card); border: 1px solid var(--border-accent);
-      color: var(--text-main); font-weight: 600; padding: 14px 26px; border-radius: 10px;
+      background: var(--bg-card); border: 1px solid var(--border-stone);
+      color: var(--text-main); font-weight: 600; padding: 14px 26px; border-radius: 12px;
       text-decoration: none; font-size: 1rem; transition: var(--transition);
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px; box-shadow: var(--shadow-sm);
     }
     .btn-hero-secondary:hover { border-color: var(--accent-gold); color: var(--accent-gold); transform: translateY(-2px); }
 
-    /* Track Cards Grid (Lovable style 6 key tracks) */
-    .tracks-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem; margin-top: 1rem;
-    }
-    .track-card {
-      background: var(--bg-card); border: 1px solid var(--border-color);
-      border-radius: 16px; padding: 2rem; text-align: left; transition: var(--transition);
-      display: flex; flex-direction: column; justify-content: space-between; position: relative;
-    }
-    .track-card:hover { transform: translateY(-5px); border-color: var(--border-accent); box-shadow: var(--shadow-lg); }
-    .track-badge {
-      font-size: 0.72rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em;
-      color: var(--accent-gold); background: var(--accent-gold-glow); padding: 4px 10px;
-      border-radius: 6px; display: inline-block; margin-bottom: 1rem;
-    }
-    .track-title { font-size: 1.3rem; margin-bottom: 0.6rem; color: var(--text-main); font-weight: 700; }
-    .track-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
-    .track-action {
-      color: var(--accent-gold); text-decoration: none; font-weight: 600; font-size: 0.9rem;
-      display: inline-flex; align-items: center; gap: 6px; transition: var(--transition);
-    }
-    .track-action:hover { gap: 10px; color: var(--accent-gold-light); }
+    /* Sections */
+    .section { padding: 4.5rem 0; border-bottom: 1px solid var(--border-stone); }
+    .section-header { text-align: center; max-width: 840px; margin: 0 auto 3rem; }
+    .section-subtitle { color: var(--accent-gold-dark); text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.16em; font-weight: 800; margin-bottom: 0.5rem; }
+    .section-title { font-size: 2.25rem; color: var(--text-main); margin-bottom: 0.75rem; font-weight: 800; }
+    .section-desc { color: var(--text-muted); font-size: 1.08rem; }
 
-    /* Section Styles */
-    .section { padding: 4.5rem 0; border-bottom: 1px solid var(--border-color); }
-    .section-header { text-align: center; max-width: 820px; margin: 0 auto 3rem; }
-    .section-subtitle { color: var(--accent-gold); text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.15em; font-weight: 700; margin-bottom: 0.5rem; }
-    .section-title { font-size: 2.2rem; color: var(--text-main); margin-bottom: 0.75rem; }
-    .section-desc { color: var(--text-muted); font-size: 1.05rem; }
+    /* ========================================================
+       MAIN STUDY TRACKS - ROBUST TABBED MODULE (PRE-RENDERED)
+       ======================================================== */
+    .tracks-nav-bar {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px; margin-bottom: 2rem;
+    }
+    .track-tab-btn {
+      background: var(--bg-card); border: 1px solid var(--border-stone);
+      border-radius: 14px; padding: 1.25rem 1.1rem; text-align: left; cursor: pointer;
+      transition: var(--transition); box-shadow: var(--shadow-sm); display: flex;
+      flex-direction: column; justify-content: space-between; position: relative;
+    }
+    .track-tab-btn:hover { border-color: var(--accent-gold); transform: translateY(-2px); }
+    .track-tab-btn.active {
+      background: var(--bg-card);
+      border: 2px solid var(--accent-gold);
+      box-shadow: var(--shadow-md), var(--shadow-gold);
+    }
+    .track-tab-btn.active::after {
+      content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%);
+      border-width: 8px 8px 0 8px; border-style: solid; border-color: var(--accent-gold) transparent transparent transparent;
+    }
+    .track-tab-tag {
+      font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--accent-gold-dark);
+      background: var(--accent-gold-glow); padding: 3px 8px; border-radius: 6px; display: inline-block; margin-bottom: 8px;
+    }
+    .track-tab-title { font-size: 0.98rem; font-weight: 700; color: var(--text-main); line-height: 1.3; font-family: var(--font-title); }
 
-    /* Interactive Lesson Module (Daniel's Prophetic Path) */
+    /* Track Content Panels (Static HTML Pre-rendered for Reliability) */
+    .track-panel {
+      display: none; background: var(--bg-card); border: 1px solid var(--border-stone);
+      border-radius: 20px; box-shadow: var(--shadow-md); padding: 2.5rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .track-panel.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    .track-panel-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 1.5rem; border-bottom: 1px solid var(--border-stone);
+      padding-bottom: 1.75rem; margin-bottom: 2rem;
+    }
+    .track-panel-title { font-size: 1.85rem; color: var(--text-main); font-weight: 800; margin-bottom: 0.4rem; }
+    .track-panel-chapters { font-size: 0.98rem; color: var(--accent-gold-dark); font-weight: 700; }
+    .track-panel-grid {
+      display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2.25rem; align-items: start;
+    }
+    @media (max-width: 992px) { .track-panel-grid { grid-template-columns: 1fr; } }
+
+    .track-box {
+      background: var(--bg-subtle); border: 1px solid var(--border-stone);
+      border-radius: 14px; padding: 1.5rem; margin-bottom: 1.35rem;
+    }
+    .track-box h4 {
+      font-size: 1.1rem; color: var(--accent-gold-dark); margin-bottom: 0.6rem;
+      display: flex; align-items: center; gap: 8px; font-weight: 700;
+    }
+    .track-box p, .track-box ul, .track-box ol {
+      color: var(--text-muted); font-size: 0.96rem; line-height: 1.72; margin-bottom: 0.8rem;
+    }
+    .track-box ul, .track-box ol { padding-left: 1.25rem; }
+    .track-box li { margin-bottom: 0.4rem; }
+
+    /* Lesson Player Layout (12 Lessons) */
     .lesson-container {
-      background: var(--bg-card); border: 1px solid var(--border-color);
+      background: var(--bg-card); border: 1px solid var(--border-stone);
       border-radius: 20px; box-shadow: var(--shadow-md); overflow: hidden;
       margin-bottom: 2rem;
     }
     .lesson-header-bar {
-      padding: 1.5rem 2rem; background: var(--bg-secondary);
-      border-bottom: 1px solid var(--border-color); display: flex;
+      padding: 1.5rem 2rem; background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-stone); display: flex;
       justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
     }
     .lesson-pill {
       background: var(--accent-gold-glow); border: 1px solid var(--border-accent);
-      color: var(--accent-gold); font-size: 0.8rem; font-weight: 700;
-      padding: 4px 12px; border-radius: 999px; text-transform: uppercase;
+      color: var(--accent-gold-dark); font-size: 0.82rem; font-weight: 700;
+      padding: 5px 14px; border-radius: 999px; text-transform: uppercase;
     }
-    .lesson-nav-pills {
-      display: flex; gap: 6px; overflow-x: auto; max-width: 100%; padding: 4px 0;
-    }
+    .lesson-nav-pills { display: flex; gap: 6px; overflow-x: auto; max-width: 100%; padding: 4px 0; }
     .lesson-nav-btn {
-      background: var(--bg-primary); border: 1px solid var(--border-color);
-      color: var(--text-muted); width: 36px; height: 36px; border-radius: 8px;
-      cursor: pointer; font-weight: 600; font-size: 0.85rem; transition: var(--transition);
+      background: var(--bg-card); border: 1px solid var(--border-stone);
+      color: var(--text-muted); width: 38px; height: 38px; border-radius: 10px;
+      cursor: pointer; font-weight: 700; font-size: 0.88rem; transition: var(--transition);
       display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
     }
     .lesson-nav-btn:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
     .lesson-nav-btn.active {
-      background: var(--accent-gold); color: #000; font-weight: 700; border-color: var(--accent-gold);
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      color: #FFFFFF; font-weight: 800; border-color: transparent;
       box-shadow: var(--shadow-gold);
     }
-    .lesson-nav-btn.completed {
-      border-color: var(--accent-emerald); color: var(--accent-emerald);
-    }
+    .lesson-nav-btn.completed { border-color: var(--accent-emerald); color: var(--accent-emerald); }
 
     .lesson-body {
       padding: 2.5rem; display: grid; grid-template-columns: 1.4fr 0.8fr;
@@ -241,182 +281,176 @@
     }
     @media (max-width: 992px) { .lesson-body { grid-template-columns: 1fr; padding: 1.5rem; } }
 
-    .lesson-main-content h3 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-main); }
-    .lesson-reference { font-size: 0.95rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 1.5rem; }
-    
     .scripture-card {
-      background: rgba(0, 0, 0, 0.25); border-left: 4px solid var(--accent-gold);
-      padding: 1.25rem 1.5rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0;
+      background: var(--bg-parchment); border-left: 4px solid var(--accent-gold);
+      padding: 1.25rem 1.6rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0;
       font-family: var(--font-serif); font-size: 1.05rem; font-style: italic; color: var(--text-main);
+      border-top: 1px solid var(--border-stone); border-right: 1px solid var(--border-stone); border-bottom: 1px solid var(--border-stone);
     }
-    
-    .exegesis-block { margin-top: 1.5rem; }
+
+    .exegesis-block { margin-top: 1.6rem; }
     .exegesis-block h4 {
-      font-size: 1.15rem; color: var(--accent-gold); margin-bottom: 0.6rem;
-      display: flex; align-items: center; gap: 8px;
+      font-size: 1.12rem; color: var(--accent-gold-dark); margin-bottom: 0.5rem;
+      display: flex; align-items: center; gap: 8px; font-weight: 700;
     }
     .exegesis-block p, .exegesis-block ul, .exegesis-block ol {
-      color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.25rem;
+      color: var(--text-muted); font-size: 0.98rem; line-height: 1.72; margin-bottom: 1.25rem;
     }
     .exegesis-block ul, .exegesis-block ol { padding-left: 1.25rem; }
     .exegesis-block li { margin-bottom: 0.4rem; }
 
     .sidebar-widget {
-      background: var(--bg-secondary); border: 1px solid var(--border-color);
-      border-radius: 14px; padding: 1.5rem; margin-bottom: 1.25rem;
+      background: var(--bg-subtle); border: 1px solid var(--border-stone);
+      border-radius: 16px; padding: 1.6rem; margin-bottom: 1.35rem;
     }
     .sidebar-widget h5 {
-      font-size: 0.95rem; color: var(--accent-gold); text-transform: uppercase;
-      letter-spacing: 0.06em; margin-bottom: 0.9rem; font-family: var(--font-body); font-weight: 700;
+      font-size: 0.92rem; color: var(--accent-gold-dark); text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.9rem; font-family: var(--font-body); font-weight: 800;
     }
-    .sidebar-list { list-style: none; font-size: 0.9rem; color: var(--text-muted); }
-    .sidebar-list li { margin-bottom: 0.6rem; display: flex; align-items: flex-start; gap: 8px; }
+    .sidebar-list { list-style: none; font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; }
+    .sidebar-list li { margin-bottom: 0.65rem; display: flex; align-items: flex-start; gap: 8px; }
     .sidebar-list li span.bullet { color: var(--accent-gold); font-weight: bold; }
 
-    /* Reflection Questions Box */
     .reflection-box {
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+      background: var(--bg-parchment);
       border: 1px solid var(--border-accent); border-radius: 16px; padding: 1.75rem 2rem;
-      margin: 2rem 0;
+      margin: 2.25rem 0;
     }
-    .reflection-title { font-family: var(--font-title); color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem; }
-    .reflection-list { padding-left: 1.25rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+    .reflection-title { font-family: var(--font-title); color: var(--accent-gold-dark); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700; }
+    .reflection-list { padding-left: 1.25rem; color: var(--text-muted); font-size: 0.96rem; line-height: 1.75; }
     .reflection-list li { margin-bottom: 0.6rem; }
 
-    /* Lesson Bottom Bar */
     .lesson-bottom-bar {
-      padding: 1.5rem 2rem; background: var(--bg-secondary);
-      border-top: 1px solid var(--border-color); display: flex;
+      padding: 1.5rem 2rem; background: var(--bg-subtle);
+      border-top: 1px solid var(--border-stone); display: flex;
       justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
     }
-    .progress-status { font-size: 0.9rem; color: var(--text-muted); font-weight: 500; }
+    .progress-status { font-size: 0.92rem; color: var(--text-muted); font-weight: 600; }
 
-    /* Google Forms Embed Card */
+    /* Quiz Widget */
+    .quiz-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1.5rem; }
+    .quiz-option {
+      background: var(--bg-card); border: 1px solid var(--border-stone); color: var(--text-main);
+      padding: 14px 18px; border-radius: 12px; cursor: pointer; font-size: 0.95rem; text-align: left;
+      transition: var(--transition); display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow-sm);
+    }
+    .quiz-option:hover { border-color: var(--accent-gold); background: var(--accent-gold-subtle); }
+    .quiz-option.correct { background: rgba(5, 150, 105, 0.12); border-color: var(--accent-emerald); color: var(--text-main); font-weight: 600; }
+    .quiz-option.wrong { background: rgba(220, 38, 38, 0.12); border-color: var(--accent-crimson); color: var(--text-main); }
+    .quiz-feedback { padding: 1.1rem 1.4rem; border-radius: 12px; font-size: 0.92rem; margin-bottom: 1.25rem; display: none; line-height: 1.6; }
+    .quiz-feedback.show { display: block; }
+
+    /* Form Embed */
     .form-embed-card {
       background: var(--bg-card); border: 1px solid var(--border-accent);
-      border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg);
-      padding: 2rem; margin-top: 1.5rem;
+      border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);
+      padding: 2.25rem; margin-top: 1.5rem;
     }
     .form-frame-wrapper {
-      position: relative; width: 100%; height: 800px;
-      border-radius: 12px; overflow: hidden; background: #ffffff;
+      position: relative; width: 100%; height: 850px;
+      border-radius: 14px; overflow: hidden; background: #FFFFFF; border: 1px solid var(--border-stone);
     }
     .form-frame { width: 100%; height: 100%; border: none; }
 
     /* Timeline & Tables */
-    .timeline-bar-visual { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; }
+    .timeline-bar-visual { background: var(--bg-card); border: 1px solid var(--border-stone); border-radius: 18px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-sm); }
     .timeline-svg { width: 100%; height: auto; }
     .timeline-nodes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
     .timeline-node-card {
-      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px;
-      padding: 1.5rem; cursor: pointer; transition: var(--transition);
+      background: var(--bg-card); border: 1px solid var(--border-stone); border-radius: 14px;
+      padding: 1.6rem; cursor: pointer; transition: var(--transition); box-shadow: var(--shadow-sm);
     }
-    .timeline-node-card:hover, .timeline-node-card.active { border-color: var(--accent-gold); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .timeline-date-tag { font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-gold); font-weight: 700; margin-bottom: 6px; }
-    .timeline-node-title { font-size: 1.08rem; font-weight: 700; margin-bottom: 8px; color: var(--text-main); }
-    .timeline-node-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+    .timeline-node-card:hover, .timeline-node-card.active { border-color: var(--accent-gold); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .timeline-date-tag { font-family: var(--font-mono); font-size: 0.86rem; color: var(--accent-gold-dark); font-weight: 700; margin-bottom: 6px; }
+    .timeline-node-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--text-main); }
+    .timeline-node-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
 
     .calc-card {
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.8));
-      border: 1px solid var(--border-accent); border-radius: 16px; padding: 2rem; margin-top: 2rem;
+      background: var(--bg-subtle); border: 1px solid var(--border-accent);
+      border-radius: 18px; padding: 2rem; margin-top: 2rem;
     }
     .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; align-items: center; }
-    .form-group label { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 500; }
+    .form-group label { display: block; font-size: 0.86rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; }
     .form-control {
-      width: 100%; background: var(--bg-primary); border: 1px solid var(--border-color);
-      color: var(--text-main); padding: 10px 14px; border-radius: 8px; font-size: 0.95rem; outline: none;
+      width: 100%; background: var(--bg-card); border: 1px solid var(--border-stone);
+      color: var(--text-main); padding: 11px 15px; border-radius: 10px; font-size: 0.95rem; outline: none;
+      box-shadow: var(--shadow-sm);
     }
     .form-control:focus { border-color: var(--accent-gold); box-shadow: 0 0 0 3px var(--accent-gold-glow); }
 
-    .table-responsive { overflow-x: auto; border-radius: 14px; border: 1px solid var(--border-color); background: var(--bg-card); }
-    .matrix-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
-    .matrix-table th, .matrix-table td { padding: 1.15rem 1.25rem; border-bottom: 1px solid var(--border-color); vertical-align: top; }
-    .matrix-table th { background: var(--bg-secondary); color: var(--accent-gold); font-family: var(--font-title); font-size: 0.95rem; position: sticky; top: 0; }
-    .matrix-table tr:hover td { background: rgba(245, 158, 11, 0.03); }
+    .table-responsive { overflow-x: auto; border-radius: 16px; border: 1px solid var(--border-stone); background: var(--bg-card); box-shadow: var(--shadow-sm); }
+    .matrix-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem; }
+    .matrix-table th, .matrix-table td { padding: 1.15rem 1.35rem; border-bottom: 1px solid var(--border-stone); vertical-align: top; }
+    .matrix-table th { background: var(--bg-subtle); color: var(--accent-gold-dark); font-family: var(--font-title); font-size: 0.96rem; position: sticky; top: 0; font-weight: 700; }
+    .matrix-table tr:hover td { background: var(--accent-gold-subtle); }
     .matrix-era { font-weight: 700; color: var(--text-main); display: flex; flex-direction: column; gap: 4px; }
-    .matrix-era-date { font-size: 0.75rem; color: var(--accent-gold); font-family: var(--font-mono); }
+    .matrix-era-date { font-size: 0.78rem; color: var(--accent-gold-dark); font-family: var(--font-mono); }
 
     /* Tabs & Library */
     .tabs-wrapper { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 2.5rem; }
     .tab-btn {
-      background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-muted);
-      padding: 10px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: 600;
-      cursor: pointer; transition: var(--transition);
+      background: var(--bg-card); border: 1px solid var(--border-stone); color: var(--text-muted);
+      padding: 10px 22px; border-radius: 30px; font-size: 0.92rem; font-weight: 600;
+      cursor: pointer; transition: var(--transition); box-shadow: var(--shadow-sm);
     }
-    .tab-btn:hover { color: var(--text-main); border-color: var(--accent-gold); }
+    .tab-btn:hover { color: var(--accent-gold-dark); border-color: var(--accent-gold); }
     .tab-btn.active {
-      background: linear-gradient(135deg, var(--accent-gold), #d97706);
-      color: #ffffff; border-color: transparent; box-shadow: var(--shadow-gold);
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      color: #FFFFFF; border-color: transparent; box-shadow: var(--shadow-gold);
     }
     .tab-content { display: none; }
     .tab-content.active { display: block; animation: fadeIn 0.35s ease-in-out; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
     .library-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
     .book-card {
-      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px;
-      padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; transition: var(--transition);
+      background: var(--bg-card); border: 1px solid var(--border-stone); border-radius: 16px;
+      padding: 1.85rem; display: flex; flex-direction: column; justify-content: space-between; transition: var(--transition);
+      box-shadow: var(--shadow-sm);
     }
-    .book-card:hover { transform: translateY(-4px); border-color: var(--border-accent); box-shadow: var(--shadow-lg); }
-    .book-author { font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; font-weight: 700; }
-    .book-title { font-size: 1.15rem; margin: 6px 0 10px; color: var(--text-main); font-weight: 700; }
-    .book-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem; flex-grow: 1; line-height: 1.6; }
-    .btn-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent-gold); text-decoration: none; font-size: 0.85rem; font-weight: 600; }
-    .btn-link:hover { color: var(--accent-gold-light); text-decoration: underline; }
+    .book-card:hover { transform: translateY(-4px); border-color: var(--accent-gold); box-shadow: var(--shadow-md); }
+    .book-author { font-size: 0.82rem; color: var(--accent-gold-dark); text-transform: uppercase; font-weight: 700; }
+    .book-title { font-size: 1.18rem; margin: 6px 0 10px; color: var(--text-main); font-weight: 700; }
+    .book-desc { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.35rem; flex-grow: 1; line-height: 1.65; }
+    .btn-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent-gold-dark); text-decoration: none; font-size: 0.88rem; font-weight: 700; }
+    .btn-link:hover { color: var(--accent-gold); text-decoration: underline; }
 
     /* Lang Cards */
-    .lang-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.75rem; margin-bottom: 1.25rem; }
-    .original-term { font-family: var(--font-title); font-size: 1.45rem; color: var(--accent-gold); direction: rtl; display: inline-block; margin-right: 12px; }
-    .greek-term { font-family: var(--font-serif); font-size: 1.3rem; color: var(--accent-blue-light); font-style: italic; }
-    .transliteration { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin-left: 8px; }
+    .lang-card { background: var(--bg-card); border: 1px solid var(--border-stone); border-radius: 16px; padding: 1.75rem; margin-bottom: 1.35rem; box-shadow: var(--shadow-sm); }
+    .original-term { font-family: var(--font-title); font-size: 1.5rem; color: var(--accent-gold-dark); direction: rtl; display: inline-block; margin-right: 12px; }
+    .greek-term { font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-blue); font-style: italic; }
+    .transliteration { font-family: var(--font-mono); font-size: 0.88rem; color: var(--text-muted); margin-left: 8px; }
+
+    /* Badges */
+    .badge { display: inline-block; padding: 4px 11px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
+    .badge-gold { background: var(--accent-gold-glow); color: var(--accent-gold-dark); border: 1px solid var(--border-accent); }
+    .badge-blue { background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); border: 1px solid rgba(37, 99, 235, 0.25); }
+    .badge-purple { background: rgba(124, 58, 237, 0.1); color: var(--accent-purple); border: 1px solid rgba(124, 58, 237, 0.25); }
+    .badge-emerald { background: rgba(5, 150, 105, 0.1); color: var(--accent-emerald); border: 1px solid rgba(5, 150, 105, 0.25); }
+    .badge-crimson { background: rgba(220, 38, 38, 0.1); color: var(--accent-crimson); border: 1px solid rgba(220, 38, 38, 0.25); }
+    .badge-cyan { background: rgba(8, 145, 178, 0.1); color: var(--accent-cyan); border: 1px solid rgba(8, 145, 178, 0.25); }
 
     /* Buttons */
     .btn {
-      background: var(--accent-gold); color: #000; border: none; padding: 10px 22px;
-      border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: var(--transition);
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+      color: #FFFFFF; border: none; padding: 11px 24px; border-radius: 10px;
+      font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: var(--transition);
       display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      box-shadow: var(--shadow-gold);
     }
-    .btn:hover { background: var(--accent-gold-light); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
-    .btn-secondary { background: var(--bg-secondary); color: var(--text-main); border: 1px solid var(--border-color); }
+    .btn:hover { background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold)); transform: translateY(-2px); }
+    .btn-secondary { background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-stone); box-shadow: var(--shadow-sm); }
     .btn-secondary:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
 
-    /* Modal */
-    .search-modal {
-      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-      background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); z-index: 2000;
-      display: none; align-items: flex-start; justify-content: center; padding-top: 10vh;
-    }
-    .search-modal.active { display: flex; }
-    .search-dialog {
-      background: var(--bg-secondary); border: 1px solid var(--border-color);
-      border-radius: 16px; width: 90%; max-width: 650px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
-      overflow: hidden;
-    }
-    .search-input-box { display: flex; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-color); gap: 12px; }
-    .search-input { width: 100%; background: transparent; border: none; outline: none; color: var(--text-main); font-size: 1.1rem; }
-    .search-results { max-height: 400px; overflow-y: auto; padding: 1rem; }
-    .search-item { padding: 10px 14px; border-radius: 8px; cursor: pointer; transition: var(--transition); border-bottom: 1px solid var(--border-color); }
-    .search-item:last-child { border-bottom: none; }
-    .search-item:hover { background: var(--accent-gold-glow); }
-    .search-item-title { font-weight: 600; color: var(--accent-gold); font-size: 0.95rem; }
-    .search-item-desc { font-size: 0.8rem; color: var(--text-muted); }
-
     /* Footer */
-    .footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 4rem 0 2rem; margin-top: 5rem; color: var(--text-muted); font-size: 0.88rem; }
-    .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 3rem; margin-bottom: 3rem; }
+    .footer { background: var(--accent-navy); border-top: 1px solid var(--border-stone); padding: 4.5rem 0 2.5rem; margin-top: 5rem; color: #94A3B8; font-size: 0.9rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 3rem; margin-bottom: 3.5rem; }
     @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } .nav-links { display: none; } }
-    .footer-col h5 { font-family: var(--font-title); color: var(--text-main); font-size: 1rem; margin-bottom: 1.2rem; }
+    .footer-col h5 { font-family: var(--font-title); color: #F8FAFC; font-size: 1.05rem; margin-bottom: 1.2rem; }
     .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 0.6rem; }
-    .footer-links a { color: var(--text-muted); text-decoration: none; transition: var(--transition); }
-    .footer-links a:hover { color: var(--accent-gold); }
-    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-dim); font-size: 0.8rem; }
-
-    @media print {
-      body { background: #fff; color: #000; }
-      .navbar, .hero-section, .btn, .lesson-bottom-bar, .lesson-nav-pills, .footer { display: none !important; }
-      .lesson-container, .table-responsive { border: 1px solid #ccc; box-shadow: none; }
-    }
+    .footer-links li { margin-bottom: 0.65rem; }
+    .footer-links a { color: #94A3B8; text-decoration: none; transition: var(--transition); }
+    .footer-links a:hover { color: var(--accent-gold-light); }
+    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); color: #64748B; font-size: 0.82rem; }
   </style>
 </head>
 <body>
@@ -444,34 +478,15 @@
       </ul>
 
       <div class="nav-actions">
-        <button class="btn-icon" id="searchBtn" title="Поиск по курсу" aria-label="Поиск">
-          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-        </button>
         <button class="btn-icon" id="themeToggle" title="Сменить тему оформления" aria-label="Тема">
           <svg id="themeIcon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
         </button>
-        <button class="btn-icon" onclick="window.print()" title="Распечатать / Экспорт в PDF" aria-label="Печать">
+        <button class="btn-icon" onclick="window.print()" title="Печать / PDF" aria-label="Печать">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
         </button>
       </div>
     </div>
   </header>
-
-  <!-- Global Search Modal -->
-  <div class="search-modal" id="searchModal">
-    <div class="search-dialog">
-      <div class="search-input-box">
-        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-        <input type="text" id="searchInput" class="search-input" placeholder="Поиск по урокам, темам, датам (1290, 1335, 1260, 2300), терминам...">
-        <button class="btn-icon" id="closeSearch" style="width:32px;height:32px;">&times;</button>
-      </div>
-      <div class="search-results" id="searchResults">
-        <div style="text-align:center; padding: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">
-          Введите запрос для мгновенного поиска по всему курсу и материалам.
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Hero Section -->
   <main>
@@ -506,53 +521,53 @@
       </div>
     </section>
 
-    <!-- MAIN STUDY TRACKS - INTERACTIVE TABBED MODULE -->
+    <!-- MAIN STUDY TRACKS - TABBED CONTAINER WITH PRE-RENDERED PANELS -->
     <section id="tracks" class="section">
       <div class="container">
         <div class="section-header">
           <div class="section-subtitle">Интерактивный навигатор</div>
           <h2 class="section-title">Основные Темы Изучения</h2>
-          <p class="section-desc">Нажмите на любую из тем ниже, чтобы мгновенно открыть интерактивную вкладку с подробным содержанием, экзегетическим разбором и хронологией.</p>
+          <p class="section-desc">Нажмите на любую из тем ниже, чтобы мгновенно переключить вкладку с экзегетическим разбором, хронологией и уроками.</p>
         </div>
 
         <!-- 6 Interactive Tabs Bar -->
         <div class="tracks-nav-bar" id="tracksNavBar">
-          <button class="track-tab-btn active" onclick="selectTrack(1)" id="track-btn-1">
+          <button class="track-tab-btn active" onclick="switchTrackTab(1)" id="tab-btn-1" type="button">
             <div>
               <span class="track-tab-tag">Тема 1 • Главы 2, 7</span>
               <div class="track-tab-title">Четыре Царства и Суд</div>
             </div>
           </button>
 
-          <button class="track-tab-btn" onclick="selectTrack(2)" id="track-btn-2">
+          <button class="track-tab-btn" onclick="switchTrackTab(2)" id="tab-btn-2" type="button">
             <div>
               <span class="track-tab-tag">Тема 2 • Главы 8–9</span>
               <div class="track-tab-title">2300 Дней и 70 Седьмин</div>
             </div>
           </button>
 
-          <button class="track-tab-btn" onclick="selectTrack(3)" id="track-btn-3">
+          <button class="track-tab-btn" onclick="switchTrackTab(3)" id="tab-btn-3" type="button">
             <div>
               <span class="track-tab-tag">Тема 3 • Главы 1, 3, 6</span>
               <div class="track-tab-title">Испытания Веры и Культ</div>
             </div>
           </button>
 
-          <button class="track-tab-btn" onclick="selectTrack(4)" id="track-btn-4">
+          <button class="track-tab-btn" onclick="switchTrackTab(4)" id="tab-btn-4" type="button">
             <div>
               <span class="track-tab-tag">Тема 4 • Главы 11–12</span>
               <div class="track-tab-title">1260, 1290 и 1335 Лет</div>
             </div>
           </button>
 
-          <button class="track-tab-btn" onclick="selectTrack(5)" id="track-btn-5">
+          <button class="track-tab-btn" onclick="switchTrackTab(5)" id="tab-btn-5" type="button">
             <div>
               <span class="track-tab-tag">Тема 5 • Откр 1–11</span>
               <div class="track-tab-title">7 Церквей, Печатей и Труб</div>
             </div>
           </button>
 
-          <button class="track-tab-btn" onclick="selectTrack(6)" id="track-btn-6">
+          <button class="track-tab-btn" onclick="switchTrackTab(6)" id="tab-btn-6" type="button">
             <div>
               <span class="track-tab-tag">Тема 6 • Откр 12–22</span>
               <div class="track-tab-title">Великая Борьба и Вечность</div>
@@ -560,10 +575,347 @@
           </button>
         </div>
 
-        <!-- Dynamic Content Display for Active Track -->
-        <div id="trackDetailContainer" class="track-detail-card">
-          <!-- Rendered via JS -->
+        <!-- ================= PANEL 1: ЧЕТЫРЕ ЦАРСТВА И СУД ================= -->
+        <div id="track-panel-1" class="track-panel active">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">Фундаментальная панорама империй</span>
+              <div class="track-panel-title">Четыре Царства и Торжество Небесного Суда</div>
+              <div class="track-panel-chapters">Книга Даниила • Главы 2 и 7</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme1-four-kingdoms.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#lessons" class="btn" onclick="loadLesson(2)">
+                К Уроку 2 (Дан 2) &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Синхронное раскрытие всемирной истории через металлический истукан и четырех хищных зверей. Эволюция земных властей от Вавилона до разделенного Рима и воцарение Христа на Небесном Суде.
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Сон об Истукане (Даниил 2)</h4>
+                <p>Четыре металла олицетворяют последовательность мировых империй: Золото — Вавилон (605–539 до н.э.), Серебро — Мидо-Персия (539–331 до н.э.), Медь — Греция (331–168 до н.э.), Железо — Рим (168 до н.э. – 476 н.э.), Ступни из железа и глины — разделенная Европа. Камень без содействия рук сокрушает колосс и становится вечной горой.</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Видение Четырех Зверей и Малый Рог (Даниил 7)</h4>
+                <p>Хищные звери показывают моральную природу империй: Лев с орлиными крыльями, Медведь с 3 ребрами, 4-главый Барс с 4 крыльями и Ужасный зверь с 10 рогами. Среди них вырастает Малый рог с глазами человека, говорящий богохульно, отменяющий закон и притесняющий святых 1260 лет (538–1798 гг.).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Сцена Предпришественного Небесного Суда</h4>
+                <p>Ветхий Днями восседает на огненном престоле, раскрываются памятные книги. Сын Человеческий шествует к Отцу и принимает вечное владычество, славу и царство, которое не разрушится (Дан 7:9–14, 26–27).</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Земная история не хаотична — она движется к Божественному триумфу. Бог суверенен над правителями, а Небесный суд оправдывает святых.
+                </p>
+              </div>
+              <div class="sidebar-widget">
+                <h5>Связанные Уроки Курса</h5>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(2); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 2: Сон об Истукане (Дан 2)
+                  </button>
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(7); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 7: Четыре Зверя и Суд (Дан 7)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- ================= PANEL 2: 2300 ДНЕЙ И 70 СЕДЬМИН ================= -->
+        <div id="track-panel-2" class="track-panel">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">Пророчество о Небесном Святилище</span>
+              <div class="track-panel-title">2300 Дней, 70 Седьмин и Очищение Святилища</div>
+              <div class="track-panel-chapters">Книга Даниила • Главы 8 и 9</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme2-2300-days-sanctuary.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#lessons" class="btn" onclick="loadLesson(8)">
+                К Уроку 8 (Дан 8) &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Величайшая хронологическая цепь Библии, соединяющая служение и жертву Иисуса Христа с эсхатологическим Днем Искупления (Йом Киппур) и очищением небесного Святилища в 1844 году.
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Овен, Козел и Нападки на Тамид (Даниил 8)</h4>
+                <p>Овен (Мидо-Персия) и козел (Греция Александра). Малый рог вырастает и посягает на небесное Святилище: отнимает ежедневное служение (тамид, תָּמִיד), повергает истину на землю и оскверняет святыню. Небесный страж возвещает: «на 2300 вечеров и утр; и тогда святилище очистится (ницдак, נִצְדַּק)».</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Молитва Даниила и Ключ 70 Седьмин (Даниил 9)</h4>
+                <p>Гавриил объясняет не понятый отрезок: 70 седьмин (490 лет) «отрезаны» (neḥtak) для иудеев от периода 2300 лет. Точка отсчета — указ Артаксеркса I в 457 г. до н.э. (Ездра 7). 69 седьмин (483 года) приводят к крещению Мессии в 27 г. н.э.</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Голгофа и Окончание 2300 Дней (1844 г.)</h4>
+                <p>В середине 70-й седьмины (весна 31 г. н.э.) Христос предан смерти, прекращая ветхозаветную жертву. В 34 г. н.э. побиение Стефана завершает 490 лет. Оставшаяся часть 2300 лет ($2300 - 490 = 1810$ лет) от 34 г. приводит точно к 1844 году — началу очищения небесного Святилища.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Христос — центр пророчеств: Он принес Себя в жертву на Голгофе и сегодня совершает первосвященническое служение заступничества и суда во Святом Святых.
+                </p>
+              </div>
+              <div class="sidebar-widget">
+                <h5>Связанные Уроки Курса</h5>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(8); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 8: 2300 Вечеров и Утр (Дан 8)
+                  </button>
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(9); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 9: 70 Седьмин и Мессия (Дан 9)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 3: ИСПЫТАНИЯ ВЕРЫ ================= -->
+        <div id="track-panel-3" class="track-panel">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">Практическое богословие победы</span>
+              <div class="track-panel-title">Испытания Веры, Завет и Истинное Поклонение</div>
+              <div class="track-panel-chapters">Книга Даниила • Главы 1, 3 и 6</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme3-faith-worship-trials.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#lessons" class="btn" onclick="loadLesson(3)">
+                К Уроку 3 (Дан 3) &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Исторические испытания верности Божьему Закону посреди языческого Вавилона и Персии как прямые прообразы эсхатологического кризиса поклонения перед Вторым пришествием.
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Верность завету при дворе (Даниил 1)</h4>
+                <p>Отказ от царских яств и вина во имя чистоты завета. 10-дневное испытание показало силу благословения Творца: юноши превзошли мудрецов империи в 10 раз.</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Золотой истукан и печь: прообраз 666 (Даниил 3)</h4>
+                <p>Навуходоносор воздвиг золотого истукана 60х6 локтей на поле Деир, требуя всеобщего поклонения под угрозой печи. Отказ трех друзей и явление Четвертого в огне (Сына Божьего) — прообраз противостояния начертанию и образу зверя в Откр 13.</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Непрестанная молитва во Львином Рве (Даниил 6)</h4>
+                <p>Указ царя Дария против молитвы. Даниил не скрывает веры и трижды в день молится при открытых окнах к Иерусалиму. Ангел Божий заграждает пасть львам, свидетельствуя о непобедимости Божьей правды.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Повиновение Богу превыше человеческих законов и культурного давления. Христос лично идет в огонь и ров вместе со Своими верными слугами.
+                </p>
+              </div>
+              <div class="sidebar-widget">
+                <h5>Связанные Уроки Курса</h5>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(1); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 1: Верность в Вавилоне (Дан 1)
+                  </button>
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(3); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 3: Огненная Печь (Дан 3)
+                  </button>
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(6); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 6: Львиный Ров (Дан 6)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 4: ВРЕМЯ КОНЦА (1290 И 1335) ================= -->
+        <div id="track-panel-4" class="track-panel">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">Пророческая хронология конца</span>
+              <div class="track-panel-title">Время Конца: Периоды 1260, 1290 и 1335 Дней-Лет</div>
+              <div class="track-panel-chapters">Книга Даниила • Главы 11 и 12</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme4-time-of-the-end-1290-1335.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#lessons" class="btn" onclick="loadLesson(12)">
+                К Уроку 12 (Дан 12) &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Математическая гармония заключительных пророческих периодов книги Даниила. Устранение препятствий в 508 г., смертельная рана 1798 г., благословение 1843/1844 гг. и воскресение праведных.
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Цари Севера и Юга (Даниил 11)</h4>
+                <p>Детальнейшая летопись войн Селевкидов и Птолемеев, появление Рима, распятие Вождя Завета (ст. 22) и своенравный царь, возвеличивающий себя выше всякого бога (ст. 36–39).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Точка Отсчета 508 г. и Период 1290 Лет</h4>
+                <p>В 508 г. н.э. победа Хлодвига над арианскими вестготами устранила языческо-арианский барьер («прекращение ежедневного», Дан 12:11) для союза государства с римским епископом. 508 + 1290 = 1798 г. н.э. — пленение папы Пия VI генералом Бертье («смертельная рана»).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Период 1335 Лет и Восстание Михаила</h4>
+                <p>«Блажен, кто ожидает и достигнет 1335 дней» (Дан 12:12). 508 + 1335 = 1843/1844 г. н.э. Время великого адвентского движения, распечатывания книги Даниила и начала Следственного Суда. Дан 12:13 гарантирует Даниилу воскресение в свой жребий (lĕqēṣ hayyāmîn).</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Священная история находится на финальном этапе. Восстание Михаила ознаменует закрытие благодати и вечное избавление народа Божьего.
+                </p>
+              </div>
+              <div class="sidebar-widget">
+                <h5>Связанные Уроки Курса</h5>
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(11); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 11: Цари Севера и Юга (Дан 11)
+                  </button>
+                  <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="loadLesson(12); window.location.hash='#lessons';">
+                    <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> Урок 12: 1290 и 1335 Дней (Дан 12)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 5: СЕПТЕНАРИИ ОТКРОВЕНИЯ ================= -->
+        <div id="track-panel-5" class="track-panel">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">История христианской эпохи</span>
+              <div class="track-panel-title">Септенарии Апокалипсиса: Церкви, Печати и Трубы</div>
+              <div class="track-panel-chapters">Книга Откровение • Главы 1–11</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme5-seven-churches-seals-trumpets.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#revelation" class="btn">
+                К разделу Откровение &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Три великих семеричных цикла, раскрывающих духовное состояние церкви (7 церквей), распространение Слова Божьего и отступничество (7 печатей), а также суды над гонителями (7 труб).
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Семь Церквей (Откровение 2–3)</h4>
+                <p>Христос среди золотых светильников адресует послания семи эпохам: Эфес (апостольская чистота), Смирна (римские гонения), Пергам (компромисс с империей), Фиатира (средневековье), Сардис (Реформация), Филадельфия (великое пробуждение), Лаодикия (период суда последнего времени).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Семь Печатей и Запечатление (Откровение 4–8:1)</h4>
+                <p>Агнец открывает запечатанную книгу: 4 всадника (белый, рыжий, вороной, бледный), души мучеников под жертвенником («Доколе, Владыка?»), космические знамения 1755–1833 гг., запечатление 144 000 печатью Бога живого и безмолвие на небе.</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Семь Труб и Распечатанная Книжка (Откровение 8:2 – 11:19)</h4>
+                <p>Военные суды над Римской империей (нашествия готов, вандалов, гуннов, падение Рима в 476 г., сарацины и османы). Откр 10 показывает распечатанную книжку пророчеств Даниила, сладкую в устах и горькую в чреве (разочарование 1844 г.), после чего звучит 7-я труба воцарения Христа.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Слово Божье непобедимо. Посреди отступничества и гонений Бог сохраняет верный остаток и открывает истины для каждого исторического периода.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 6: ВЕЛИКАЯ БОРЬБА И НОВЫЙ ИЕРУСАЛИМ ================= -->
+        <div id="track-panel-6" class="track-panel">
+          <div class="track-panel-header">
+            <div>
+              <span class="badge badge-gold">Эсхатологический триумф искупления</span>
+              <div class="track-panel-title">Великая Борьба, Трехангельская Весть и Новый Иерусалим</div>
+              <div class="track-panel-chapters">Книга Откровение • Главы 12–22</div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="theme6-great-controversy-new-jerusalem.html" class="btn" style="background:var(--accent-navy); color:#FFF;">
+                Открыть отдельную страницу &rarr;
+              </a>
+              <a href="#form-test" class="btn">
+                Пройти Экзамен (Form) &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
+            Кульминация апокалиптики: противостояние Жены и Дракона, обличение зверя 666, проповедь Трехангельской вести, 7 последних язв, 1000-летний суд и вечная обитель на Новой Земле.
+          </p>
+
+          <div class="track-panel-grid">
+            <div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Жена, Дракон и Звери (Откровение 12–13)</h4>
+                <p>Жена в пустыне на 1260 лет (538–1798 гг.). Дракон в ярости идет на войну против остатка, сохраняющего заповеди Божьи и свидетельство Иисуса (Откр 12:17). Зверь из моря (папство) и зверь из земли (США) принуждают принять начертание зверя и число 666 (символ вавилонского бунта, Дан 3).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> Трехангельская Весть (Откровение 14)</h4>
+                <p>1) Вечное Евангелие и суд («настал час суда Его, поклонитесь Сотворившему небо и землю»); 2) Падение Вавилона («пал, пал Вавилон великий»); 3) Предостережение против поклонения зверю и начертанию («здесь терпение святых, соблюдающих заповеди Божии и веру в Иисуса»).</p>
+              </div>
+              <div class="track-box">
+                <h4><span style="color:var(--accent-gold-dark);">✦</span> 7 Язв, Миллениум и Новый Иерусалим (Откровение 15–22)</h4>
+                <p>Излитие чаш гнева, падение Вавилона на 3 части. Второе пришествие, 1000 лет на небесах (суд проверки над падшими ангелами), уничтожение греха во второй смерти и схождение Нового Иерусалима на обновленную землю.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-widget" style="border-color:var(--border-accent);">
+                <h5>Главный Богословский Вывод</h5>
+                <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
+                  Агнец победил! Ни грех, ни смерть, ни сатана не будут существовать вовеки. Бог сотрет всякую слезу, и искупленные узрят лицо Его.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1477,256 +1829,27 @@
 
   <!-- Interactive JavaScript Engine -->
   <script>
-    const tracksData = {
-      1: {
-        id: 1,
-        pageUrl: "theme1-four-kingdoms.html",
-        title: "Четыре Царства и Торжество Небесного Суда",
-        chapters: "Книга Даниила • Главы 2 и 7",
-        badge: "Фундаментальная панорама империй",
-        summary: "Синхронное раскрытие всемирной истории через металлический истукан и четырех хищных зверей. Эволюция земных властей от Вавилона до разделенного Рима и воцарение Христа на Небесном Суде.",
-        blocks: [
-          {
-            title: "Сон об Истукане (Даниил 2)",
-            content: "Четыре металла олицетворяют последовательность мировых империй: Золото — Вавилон (605–539 до н.э.), Серебро — Мидо-Персия (539–331 до н.э.), Медь — Греция (331–168 до н.э.), Железо — Рим (168 до н.э. – 476 н.э.), Ступни из железа и глины — разделенная Европа. Камень без содействия рук сокрушает колосс и становится вечной горой."
-          },
-          {
-            title: "Видение Четырех Зверей и Малый Рог (Даниил 7)",
-            content: "Хищные звери показывают моральную природу империй: Лев с орлиными крыльями, Медведь с 3 ребрами, 4-главый Барс с 4 крыльями и Ужасный зверь с 10 рогами. Среди них вырастает Малый рог с глазами человека, говорящий богохульно, отменяющий закон и притесняющий святых 1260 лет (538–1798 гг.)."
-          },
-          {
-            title: "Сцена Предпришественного Небесного Суда",
-            content: "Ветхий Днями восседает на огненном престоле, раскрываются памятные книги. Сын Человеческий шествует к Отцу и принимает вечное владычество, славу и царство, которое не разрушится (Дан 7:9–14, 26–27)."
-          }
-        ],
-        keyTakeaway: "Земная история не хаотична — она движется к Божественному триумфу. Бог суверенен над правителями, а Небесный суд оправдывает святых.",
-        relatedLessons: [
-          { num: 2, label: "Урок 2: Сон об Истукане (Дан 2)" },
-          { num: 7, label: "Урок 7: Четыре Зверя и Суд (Дан 7)" }
-        ]
-      },
-      2: {
-        id: 2,
-        pageUrl: "theme2-2300-days-sanctuary.html",
-        title: "2300 Дней, 70 Седьмин и Очищение Святилища",
-        chapters: "Книга Даниила • Главы 8 и 9",
-        badge: "Пророчество о Небесном Святилище",
-        summary: "Величайшая хронологическая цепь Библии, соединяющая служение и жертву Иисуса Христа с эсхатологическим Днем Искупления (Йом Киппур) и очищением небесного Святилища в 1844 году.",
-        blocks: [
-          {
-            title: "Овен, Козел и Нападки на Тамид (Даниил 8)",
-            content: "Овен (Мидо-Персия) и козел (Греция Александра). Малый рог вырастает и посягает на небесное Святилище: отнимает ежедневное служение (тамид, תָּמִיד), повергает истину на землю и оскверняет святыню. Небесный страж возвещает: «на 2300 вечеров и утр; и тогда святилище очистится (ницдак, נִצְדַּק)»."
-          },
-          {
-            title: "Молитва Даниила и Ключ 70 Седьмин (Даниил 9)",
-            content: "Гавриил объясняет не понятый отрезок: 70 седьмин (490 лет) «отрезаны» (neḥtak) для иудеев от периода 2300 лет. Точка отсчета — указ Артаксеркса I в 457 г. до н.э. (Ездра 7). 69 седьмин (483 года) приводят к крещению Мессии в 27 г. н.э."
-          },
-          {
-            title: "Голгофа и Окончание 2300 Дней",
-            content: "В середине 70-й седьмины (весна 31 г. н.э.) Христос предан смерти, прекращая ветхозаветную жертву. В 34 г. н.э. побиение Стефана завершает 490 лет. Оставшаяся часть 2300 лет ($2300 - 490 = 1810$ лет) от 34 г. приводит точно к 1844 году — началу очищения небесного Святилища."
-          }
-        ],
-        keyTakeaway: "Христос — центр пророчеств: Он принес Себя в жертву на Голгофе и сегодня совершает первосвященническое служение заступничества и суда во Святом Святых.",
-        relatedLessons: [
-          { num: 8, label: "Урок 8: 2300 Вечеров и Утр (Дан 8)" },
-          { num: 9, label: "Урок 9: 70 Седьмин и Мессия (Дан 9)" }
-        ]
-      },
-      3: {
-        id: 3,
-        pageUrl: "theme3-faith-worship-trials.html",
-        title: "Испытания Веры, Завет и Истинное Поклонение",
-        chapters: "Книга Даниила • Главы 1, 3 и 6",
-        badge: "Практическое богословие победы",
-        summary: "Исторические испытания верности Божьему Закону посреди языческого Вавилона и Персии как прямые прообразы эсхатологического кризиса поклонения перед Вторым пришествием.",
-        blocks: [
-          {
-            title: "Верность завету при дворе (Даниил 1)",
-            content: "Отказ от царских яств и вина во имя чистоты завета. 10-дневное испытание показало силу благословения Творца: юноши превзошли мудрецов империи в 10 раз."
-          },
-          {
-            title: "Золотой истукан и печь: прообраз 666 (Даниил 3)",
-            content: "Навуходоносор воздвиг золотого истукана 60х6 локтей на поле Деир, требуя всеобщего поклонения под угрозой печи. Отказ трех друзей и явление Четвертого в огне (Сына Божьего) — прообраз противостояния начертанию и образу зверя в Откр 13."
-          },
-          {
-            title: "Непрестанная молитва во Львином Рве (Даниил 6)",
-            content: "Указ царя Дария против молитвы. Даниил не скрывает веры и трижды в день молится при открытых окнах к Иерусалиму. Ангел Божий заграждает пасть львам, свидетельствуя о непобедимости Божьей правды."
-          }
-        ],
-        keyTakeaway: "Повиновение Богу превыше человеческих законов и культурного давления. Христос лично идет в огонь и ров вместе со Своими верными слугами.",
-        relatedLessons: [
-          { num: 1, label: "Урок 1: Верность в Вавилоне (Дан 1)" },
-          { num: 3, label: "Урок 3: Огненная Печь (Дан 3)" },
-          { num: 6, label: "Урок 6: Львиный Ров (Дан 6)" }
-        ]
-      },
-      4: {
-        id: 4,
-        pageUrl: "theme4-time-of-the-end-1290-1335.html",
-        title: "Время Конца: Периоды 1260, 1290 и 1335 Дней-Лет",
-        chapters: "Книга Даниила • Главы 11 и 12",
-        badge: "Пророческая хронология конца",
-        summary: "Математическая гармония заключительных пророческих периодов книги Даниила. Устранение препятствий в 508 г., смертельная рана 1798 г., благословение 1843/1844 гг. и воскресение праведных.",
-        blocks: [
-          {
-            title: "Цари Севера и Юга (Даниил 11)",
-            content: "Детальнейшая летопись войн Селевкидов и Птолемеев, появление Рима, распятие Вождя Завета (ст. 22) и своенравный царь, возвеличивающий себя выше всякого бога (ст. 36–39)."
-          },
-          {
-            title: "Точка Отсчета 508 г. и Период 1290 Лет",
-            content: "В 508 г. н.э. победа Хлодвига над арианскими вестготами устранила языческо-арианский барьер («прекращение ежедневного», Дан 12:11) для союза государства с римским епископом. 508 + 1290 = 1798 г. н.э. — пленение папы Пия VI генералом Бертье («смертельная рана»)."
-          },
-          {
-            title: "Период 1335 Лет и Восстание Михаила",
-            content: "«Блажен, кто ожидает и достигнет 1335 дней» (Дан 12:12). 508 + 1335 = 1843/1844 г. н.э. Время великого адвентского движения, распечатывания книги Даниила и начала Следственного Суда. Дан 12:13 гарантирует Даниилу воскресение в свой жребий (lĕqēṣ hayyāmîn)."
-          }
-        ],
-        keyTakeaway: "Священная история находится на финальном этапе. Восстание Михаила ознаменует закрытие благодати и вечное избавление народа Божьего.",
-        relatedLessons: [
-          { num: 11, label: "Урок 11: Цари Севера и Юга (Дан 11)" },
-          { num: 12, label: "Урок 12: 1260, 1290 и 1335 Дней (Дан 12)" }
-        ]
-      },
-      5: {
-        id: 5,
-        pageUrl: "theme5-seven-churches-seals-trumpets.html",
-        title: "Септенарии Апокалипсиса: Церкви, Печати и Трубы",
-        chapters: "Книга Откровение • Главы 1–11",
-        badge: "История христианской эпохи",
-        summary: "Три великих семеричных цикла, раскрывающих духовное состояние церкви (7 церквей), распространение Слова Божьего и отступничество (7 печатей), а также суды над гонителями (7 труб).",
-        blocks: [
-          {
-            title: "Семь Церквей (Откровение 2–3)",
-            content: "Христос среди золотых светильников адресует послания семи эпохам: Эфес (апостольская чистота), Смирна (римские гонения), Пергам (компромисс с империей), Фиатира (средневековье), Сардис (Реформация), Филадельфия (великое пробуждение), Лаодикия (период суда последнего времени)."
-          },
-          {
-            title: "Семь Печатей и Запечатление (Откровение 4–8:1)",
-            content: "Агнец открывает запечатанную книгу: 4 всадника (белый, рыжий, вороной, бледный), души мучеников под жертвенником («Доколе, Владыка?»), космические знамения 1755–1833 гг., запечатление 144 000 печатью Бога живого и безмолвие на небе."
-          },
-          {
-            title: "Семь Труб и Распечатанная Книжка (Откровение 8:2 – 11:19)",
-            content: "Военные суды над Римской империей (нашествия готов, вандалов, гуннов, падение Рима в 476 г., сарацины и османы). Откр 10 показывает распечатанную книжку пророчеств Даниила, сладкую в устах и горькую в чреве (разочарование 1844 г.), после чего звучит 7-я труба воцарения Христа."
-          }
-        ],
-        keyTakeaway: "Слово Божье непобедимо. Посреди отступничества и гонений Бог сохраняет верный остаток и открывает истины для каждого исторического периода.",
-        relatedLessons: [
-          { num: 7, label: "Связь с Дан 7 (Малый рог и 1260 лет)" },
-          { num: 8, label: "Связь с Дан 8 (Очищение святилища)" }
-        ]
-      },
-      6: {
-        id: 6,
-        pageUrl: "theme6-great-controversy-new-jerusalem.html",
-        title: "Великая Борьба, Трехангельская Весть и Новый Иерусалим",
-        chapters: "Книга Откровение • Главы 12–22",
-        badge: "Эсхатологический триумф искупления",
-        summary: "Кульминация апокалиптики: противостояние Жены и Дракона, обличение зверя 666, проповедь Трехангельской вести, 7 последних язв, 1000-летний суд и вечная обитель на Новой Земле.",
-        blocks: [
-          {
-            title: "Жена, Дракон и Звери (Откровение 12–13)",
-            content: "Жена в пустыне на 1260 лет (538–1798 гг.). Дракон в ярости идет на войну против остатка, сохраняющего заповеди Божьи и свидетельство Иисуса (Откр 12:17). Зверь из моря (папство) и зверь из земли (США) принуждают принять начертание зверя и число 666 (символ вавилонского бунта, Дан 3)."
-          },
-          {
-            title: "Трехангельская Весть (Откровение 14)",
-            content: "1) Вечное Евангелие и суд («настал час суда Его, поклонитесь Сотворившему небо и землю»); 2) Падение Вавилона («пал, пал Вавилон великий»); 3) Предостережение против поклонения зверю и начертанию («здесь терпение святых, соблюдающих заповеди Божии и веру в Иисуса»)."
-          },
-          {
-            title: "7 Язв, Миллениум и Новый Иерусалим (Откровение 15–22)",
-            content: "Излитие чаш гнева, падение Вавилона на 3 части. Второе пришествие, 1000 лет на небесах (суд проверки над падшими ангелами), уничтожение греха во второй смерти и схождение Нового Иерусалима на обновленную землю."
-          }
-        ],
-        keyTakeaway: "Агнец победил! Ни грех, ни смерть, ни сатана не будут существовать вовеки. Бог сотрет всякую слезу, и искупленные узрят лицо Его.",
-        relatedLessons: [
-          { num: 3, label: "Связь с Дан 3 (Испытание поклонением)" },
-          { num: 12, label: "Связь с Дан 12 (Восстание Михаила)" }
-        ]
+    // Tab switching function for Main Study Tracks
+    function switchTrackTab(tabId) {
+      console.log('Switching to track tab:', tabId);
+      // 1. Update button classes
+      for (let i = 1; i <= 6; i++) {
+        const btn = document.getElementById('tab-btn-' + i);
+        if (btn) {
+          btn.classList.toggle('active', i === tabId);
+        }
       }
-    };
 
-    function selectTrack(trackId) {
-      document.querySelectorAll('#tracksNavBar .track-tab-btn').forEach((btn, idx) => {
-        btn.classList.toggle('active', idx + 1 === trackId);
-      });
-
-      const t = tracksData[trackId];
-      const container = document.getElementById('trackDetailContainer');
-
-      let blocksHtml = '';
-      t.blocks.forEach(b => {
-        blocksHtml += `
-          <div class="track-box">
-            <h4><span style="color:var(--accent-gold-dark);">✦</span> ${b.title}</h4>
-            <p>${b.content}</p>
-          </div>
-        `;
-      });
-
-      let lessonsBtnsHtml = t.relatedLessons.map(l => `
-        <button class="btn btn-secondary" style="width:100%; justify-content:flex-start; margin-bottom:8px;" onclick="loadLesson(${l.num}); window.location.hash='#lessons';">
-          <span style="color:var(--accent-gold-dark); font-weight:bold;">→</span> ${l.label}
-        </button>
-      `).join('');
-
-      container.innerHTML = `
-        <div class="track-detail-header">
-          <div>
-            <span class="badge badge-gold">${t.badge}</span>
-            <div class="track-detail-title">${t.title}</div>
-            <div class="track-detail-chapters">${t.chapters}</div>
-          </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a href="${t.pageUrl}" class="btn" style="background:var(--accent-navy); color:#FFF; border:1px solid var(--border-accent);">
-              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              Открыть отдельную страницу темы
-            </a>
-            <a href="#lessons" class="btn" onclick="loadLesson(${t.relatedLessons[0].num})">
-              К пошаговому уроку &rarr;
-            </a>
-          </div>
-        </div>
-
-        <p style="font-size:1.08rem; color:var(--text-muted); font-family:var(--font-serif); line-height:1.75; margin-bottom:2rem;">
-          ${t.summary}
-        </p>
-
-        <div class="track-detail-grid">
-          <div>
-            ${blocksHtml}
-          </div>
-
-          <div>
-            <div class="sidebar-widget" style="border-color:var(--border-accent);">
-              <h5>Главный Богословский Вывод</h5>
-              <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65;">
-                ${t.keyTakeaway}
-              </p>
-            </div>
-
-            <div class="sidebar-widget">
-              <h5>Связанные Уроки Курса</h5>
-              <div style="display:flex; flex-direction:column; gap:4px;">
-                ${lessonsBtnsHtml}
-              </div>
-            </div>
-
-            <div class="sidebar-widget">
-              <h5>Инструменты Раздела</h5>
-              <a href="${t.pageUrl}" class="btn btn-secondary" style="width:100%; justify-content:flex-start; margin-bottom:8px;">
-                <span style="color:var(--accent-gold-dark); font-weight:bold;">◈</span> Полная страница темы с тестом
-              </a>
-              <button class="btn btn-secondary" style="width:100%; justify-content:flex-start; margin-bottom:8px;" onclick="window.location.hash='#timeline';">
-                <span style="color:var(--accent-gold-dark); font-weight:bold;">◈</span> Открыть Пророческий Таймлайн
-              </button>
-              <button class="btn btn-secondary" style="width:100%; justify-content:flex-start;" onclick="window.location.hash='#matrix';">
-                <span style="color:var(--accent-gold-dark); font-weight:bold;">◈</span> Сравнительная Матрица Видений
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
+      // 2. Update panel classes
+      for (let i = 1; i <= 6; i++) {
+        const panel = document.getElementById('track-panel-' + i);
+        if (panel) {
+          panel.classList.toggle('active', i === tabId);
+        }
+      }
     }
 
-    // 2. DATA FOR 12 LESSONS
+    // Lessons Data (12 chapters)
     const lessonsData = {
       1: {
         num: 1,
@@ -2010,6 +2133,7 @@
 
     function renderLessonPills() {
       const container = document.getElementById('lessonPillsContainer');
+      if (!container) return;
       container.innerHTML = '';
       for (let i = 1; i <= 12; i++) {
         const btn = document.createElement('button');
@@ -2026,9 +2150,12 @@
       renderLessonPills();
       const d = lessonsData[num];
 
-      document.getElementById('lessonPill').innerText = `Урок ${d.num} из 12`;
-      document.getElementById('lessonProgressStatus').innerText = `Прогресс курса: Урок ${d.num} из 12 • ${completedLessons.has(num) ? 'Пройден ✓' : 'В процессе'}`;
-      document.getElementById('lessonStatusBadge').innerText = completedLessons.has(num) ? 'Пройден ✓' : 'Текущий урок';
+      const pill = document.getElementById('lessonPill');
+      if (pill) pill.innerText = `Урок ${d.num} из 12`;
+      const pStatus = document.getElementById('lessonProgressStatus');
+      if (pStatus) pStatus.innerText = `Прогресс курса: Урок ${d.num} из 12 • ${completedLessons.has(num) ? 'Пройден ✓' : 'В процессе'}`;
+      const sBadge = document.getElementById('lessonStatusBadge');
+      if (sBadge) sBadge.innerText = completedLessons.has(num) ? 'Пройден ✓' : 'Текущий урок';
 
       let exegesisHtml = '';
       d.exegesis.forEach(item => {
@@ -2052,69 +2179,70 @@
       `).join('');
 
       const body = document.getElementById('lessonDynamicBody');
-      body.innerHTML = `
-        <!-- Left Column: Core Material -->
-        <div class="lesson-main-content">
-          <span class="badge badge-gold">${d.badge}</span>
-          <h3>${d.title}</h3>
-          <div class="lesson-reference">${d.reference}</div>
+      if (body) {
+        body.innerHTML = `
+          <div class="lesson-main-content">
+            <span class="badge badge-gold">${d.badge}</span>
+            <h3 style="font-size:1.85rem; margin-bottom:0.4rem; color:var(--text-main); font-weight:800;">${d.title}</h3>
+            <div style="font-size:0.98rem; color:var(--accent-gold-dark); font-weight:700; margin-bottom:1.5rem;">${d.reference}</div>
 
-          <div class="scripture-card">${d.quote}</div>
+            <div class="scripture-card">${d.quote}</div>
 
-          <div>${exegesisHtml}</div>
+            <div>${exegesisHtml}</div>
 
-          <!-- Reflection Questions -->
-          <div class="reflection-box">
-            <div class="reflection-title">Вопросы для размышления и обсуждения</div>
-            <ol class="reflection-list">${reflHtml}</ol>
-          </div>
-
-          <!-- Mini Quiz for this Lesson -->
-          <div style="background:var(--bg-subtle); border:1px solid var(--border-accent); border-radius:18px; padding:1.85rem; margin-top:2rem;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-              <span style="font-size:0.82rem; font-weight:800; text-transform:uppercase; color:var(--accent-gold-dark); letter-spacing:0.08em;">
-                Проверка знаний урока ${d.num}
-              </span>
-              <span id="lq-badge" style="font-size:0.78rem; padding:3px 9px; border-radius:6px; background:var(--bg-card); color:var(--text-muted); font-weight:600; border:1px solid var(--border-stone);">
-                Вопрос 1 из 1
-              </span>
+            <div class="reflection-box">
+              <div class="reflection-title">Вопросы для размышления и обсуждения</div>
+              <ol class="reflection-list">${reflHtml}</ol>
             </div>
-            <div style="font-size:1.12rem; font-weight:700; color:var(--text-main); margin-bottom:1.35rem;">
-              ${d.quiz.question}
+
+            <div style="background:var(--bg-subtle); border:1px solid var(--border-accent); border-radius:18px; padding:1.85rem; margin-top:2rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <span style="font-size:0.82rem; font-weight:800; text-transform:uppercase; color:var(--accent-gold-dark); letter-spacing:0.08em;">
+                  Проверка знаний урока ${d.num}
+                </span>
+                <span id="lq-badge" style="font-size:0.78rem; padding:3px 9px; border-radius:6px; background:var(--bg-card); color:var(--text-muted); font-weight:600; border:1px solid var(--border-stone);">
+                  Вопрос 1 из 1
+                </span>
+              </div>
+              <div style="font-size:1.12rem; font-weight:700; color:var(--text-main); margin-bottom:1.35rem;">
+                ${d.quiz.question}
+              </div>
+              <div class="quiz-options" id="lessonQuizOptions">
+                ${quizOptionsHtml}
+              </div>
+              <div id="lessonQuizFeedback" class="quiz-feedback"></div>
             </div>
-            <div class="quiz-options" id="lessonQuizOptions">
-              ${quizOptionsHtml}
+          </div>
+
+          <div>
+            <div class="sidebar-widget">
+              <h5>Ключевые Персонажи</h5>
+              <ul class="sidebar-list">${charactersHtml}</ul>
             </div>
-            <div id="lessonQuizFeedback" class="quiz-feedback"></div>
-          </div>
-        </div>
 
-        <!-- Right Column: Sidebar Widgets -->
-        <div>
-          <div class="sidebar-widget">
-            <h5>Ключевые Персонажи</h5>
-            <ul class="sidebar-list">${charactersHtml}</ul>
-          </div>
+            <div class="sidebar-widget">
+              <h5>Символы и Прообразы</h5>
+              <ul class="sidebar-list">${symbolsHtml}</ul>
+            </div>
 
-          <div class="sidebar-widget">
-            <h5>Символы и Прообразы</h5>
-            <ul class="sidebar-list">${symbolsHtml}</ul>
+            <div class="sidebar-widget" style="border-color:var(--border-accent); background:var(--bg-parchment);">
+              <h5>Применение Сегодня</h5>
+              <ul class="sidebar-list">${appHtml}</ul>
+            </div>
           </div>
+        `;
+      }
 
-          <div class="sidebar-widget" style="border-color:var(--border-accent); background:var(--bg-parchment);">
-            <h5>Применение Сегодня</h5>
-            <ul class="sidebar-list">${appHtml}</ul>
-          </div>
-        </div>
-      `;
-
-      document.getElementById('prevLessonBtn').disabled = currentLesson === 1;
-      document.getElementById('nextLessonBtn').innerText = currentLesson === 12 ? 'К книге Откровение →' : 'Следующий урок →';
+      const prevBtn = document.getElementById('prevLessonBtn');
+      if (prevBtn) prevBtn.disabled = currentLesson === 1;
+      const nextBtn = document.getElementById('nextLessonBtn');
+      if (nextBtn) nextBtn.innerText = currentLesson === 12 ? 'К книге Откровение →' : 'Следующий урок →';
     }
 
     function checkLessonQuiz(selectedIdx) {
       const d = lessonsData[currentLesson];
       const feedback = document.getElementById('lessonQuizFeedback');
+      if (!feedback) return;
       feedback.style.display = 'block';
 
       for (let i = 0; i < d.quiz.options.length; i++) {
@@ -2200,89 +2328,20 @@
       document.getElementById('calcResult').innerText = label;
     }
 
-    // Global Search Items
-    const searchableItems = [
-      { title: "Тема 1: Четыре Царства и Суд (Дан 2, 7)", desc: "Золотой истукан, 4 зверя, Малый рог и Небесный Суд", anchor: "#tracks", action: () => selectTrack(1) },
-      { title: "Тема 2: 2300 Дней и 70 Седьмин (Дан 8–9)", desc: "Овен и козел, тамид, явление и жертва Мессии, очищение святилища", anchor: "#tracks", action: () => selectTrack(2) },
-      { title: "Тема 3: Испытания Веры и Культ (Дан 1, 3, 6)", desc: "Отказ от пищи царя, золотой истукан 60х6 (666), львиный ров", anchor: "#tracks", action: () => selectTrack(3) },
-      { title: "Тема 4: 1260, 1290 и 1335 Лет (Дан 11–12)", desc: "Хронология от 508 г. до 1798 г. и 1843/1844 гг., восстание Михаила", anchor: "#tracks", action: () => selectTrack(4) },
-      { title: "Тема 5: 7 Церквей, Печатей и Труб (Откр 1–11)", desc: "История христианства, распространение Слова, суды над Римом", anchor: "#tracks", action: () => selectTrack(5) },
-      { title: "Тема 6: Великая Борьба и Вечность (Откр 12–22)", desc: "Жена и Дракон, зверь 666, 3 ангела, 7 язв, 1000 лет, Новый Иерусалим", anchor: "#tracks", action: () => selectTrack(6) },
-      { title: "Урок 1: Верность в Вавилоне (Дан 1)", desc: "Отказ от царских яств, заветная идентичность", anchor: "#lessons", action: () => loadLesson(1) },
-      { title: "Урок 2: Сон об Истукане (Дан 2)", desc: "Золото, серебро, медь, железо, глина и сокрушающий Камень", anchor: "#lessons", action: () => loadLesson(2) },
-      { title: "Урок 3: Огненная Печь (Дан 3)", desc: "Истукан 60х6 (прообраз 666), печь, Четвертый в огне", anchor: "#lessons", action: () => loadLesson(3) },
-      { title: "Урок 4: Срубленное Дерево (Дан 4)", desc: "Гордость Навуходоносора, 7 времен безумия", anchor: "#lessons", action: () => loadLesson(4) },
-      { title: "Урок 5: Пир Валтасара (Дан 5)", desc: "Осквернение сосудов, МЕНЕ, ТЕКЕЛ, УПАРСИН, падение Вавилона", anchor: "#lessons", action: () => loadLesson(5) },
-      { title: "Урок 6: Даниил во Львином Рве (Дан 6)", desc: "Закон мидян и персов, верность молитве, спасение ангелом", anchor: "#lessons", action: () => loadLesson(6) },
-      { title: "Урок 7: Четыре Зверя и Суд (Дан 7)", desc: "1260 лет гонений, малый рог, Небесный Суд", anchor: "#lessons", action: () => loadLesson(7) },
-      { title: "Урок 8: Овен, Козел и 2300 Дней (Дан 8)", desc: "Посягательство на тамид, очищение Святилища в 1844 г.", anchor: "#lessons", action: () => loadLesson(8) },
-      { title: "Урок 9: 70 Седьмин и Мессия (Дан 9)", desc: "457 г. до н.э., крещение в 27 г., крест в 31 г., Стефан в 34 г.", anchor: "#lessons", action: () => loadLesson(9) },
-      { title: "Урок 10: Видение на Тигре (Дан 10)", desc: "21 день духовной битвы за Персию, помощь Михаила", anchor: "#lessons", action: () => loadLesson(10) },
-      { title: "Урок 11: Цари Севера и Юга (Дан 11)", desc: "Детальная хроника веков и распятие Вождя Завета", anchor: "#lessons", action: () => loadLesson(11) },
-      { title: "Урок 12: Восстание Михаила, 1290 и 1335 Дней (Дан 12)", desc: "508 г. $\\rightarrow$ 1798 г. и 1843/1844 гг., жребий Даниила", anchor: "#lessons", action: () => loadLesson(12) },
-      { title: "1290 Дней-Лет (Дан 12:11)", desc: "508 г. н.э. — 1798 г. н.э. (Смертельная рана)", anchor: "#timeline" },
-      { title: "1335 Дней-Лет (Дан 12:12)", desc: "508 г. н.э. — 1843/1844 гг. н.э. («Блажен ожидающий»)", anchor: "#timeline" },
-      { title: "2300 Дней-Лет (Дан 8:14)", desc: "457 г. до н.э. — 1844 г. н.э. (Очищение Святилища)", anchor: "#timeline" },
-      { title: "Экзамен Google Forms", desc: "Официальное итоговое тестирование курса", anchor: "#form-test" }
-    ];
-
-    const searchBtn = document.getElementById('searchBtn');
-    const searchModal = document.getElementById('searchModal');
-    const closeSearch = document.getElementById('closeSearch');
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-
-    searchBtn.onclick = () => {
-      searchModal.classList.add('active');
-      searchInput.focus();
-    };
-
-    closeSearch.onclick = () => searchModal.classList.remove('active');
-    searchModal.onclick = (e) => {
-      if (e.target === searchModal) searchModal.classList.remove('active');
-    };
-
-    searchInput.oninput = (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      if (!q) {
-        searchResults.innerHTML = '<div style="text-align:center; padding: 1.5rem; color: var(--text-muted);">Введите запрос для поиска.</div>';
-        return;
-      }
-
-      const matches = searchableItems.filter(item => 
-        item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q)
-      );
-
-      if (matches.length === 0) {
-        searchResults.innerHTML = '<div style="text-align:center; padding: 1.5rem; color: var(--text-muted);">Ничего не найдено по данному запросу.</div>';
-        return;
-      }
-
-      searchResults.innerHTML = matches.map(item => `
-        <div class="search-item" onclick="navigateTo('${item.anchor}', ${item.action ? 'true' : 'false'})">
-          <div class="search-item-title">${item.title}</div>
-          <div class="search-item-desc">${item.desc}</div>
-        </div>
-      `).join('');
-    };
-
-    function navigateTo(anchor, hasAction) {
-      searchModal.classList.remove('active');
-      window.location.hash = anchor;
-    }
-
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
-
-    themeToggle.onclick = () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
-    };
+    if (themeToggle) {
+      themeToggle.onclick = () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+      };
+    }
 
     function updateThemeIcon(theme) {
+      if (!themeIcon) return;
       if (theme === 'dark') {
         themeIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
       } else {
@@ -2290,12 +2349,13 @@
       }
     }
 
+    // Initialize on DOM Ready
     document.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', savedTheme);
       updateThemeIcon(savedTheme);
 
-      selectTrack(1);
+      switchTrackTab(1);
       loadLesson(1);
     });
   </script>
